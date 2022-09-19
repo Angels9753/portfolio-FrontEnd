@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ConocemeComponent } from './components/conoceme/conoceme.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { EstudiosComponent } from './components/estudios/estudios.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ConocemeComponent } from './components/conoceme/conoceme.component';
     HeaderComponent,
     LogoAPComponent,
     AcercaDeComponent,
-    ConocemeComponent
+    ConocemeComponent,
+    SkillsComponent,
+    EstudiosComponent
  
   ],
   imports: [

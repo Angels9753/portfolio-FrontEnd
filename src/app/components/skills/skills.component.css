@@ -1,0 +1,48 @@
+.sobre-mi {
+    padding-top: 10em;
+     background: var(--main-bg-color);
+  }
+
+/*Skills*/
+.progress{
+  
+    margin-top:10px;
+    padding: 1px;
+}
+/*.progress-bar{
+font-size: 1em;
+}*/
+
+
+.grad h6{padding-top: 1rem;}.fa-angles-down{
+    --fa-animation-duration: 5s
+  }
+  .icom-grande{
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-size: 8em;
+    color:red ;
+  }
+
+  .foto-movi{
+    /*width: 100%;*/
+    position: relative;
+    opacity: 1; 
+    /*background-image: está en style en htlm*/
+    background-size: 200%;
+    animation: movimiento 10s infinite linear alternate;
+  }
+  @keyframes movimiento{
+  from
+  {background-position:bottom left;}
+  to
+  {background-position:top right;}
+  }
+  
+  .grad {
+    padding: 2em;
+    position: relative;
+    background: -webkit-linear-gradient(bottom right, #025877, var(--main-bg-color));
+  }
+  
