@@ -1,43 +1,49 @@
 .sobre-mi {
-    padding-top: 0em;
-     background: var(--main-bg-color);
-  }
-    
-  .foto-movi{
-    /*width: 100%;*/
-    position: relative;
-    opacity: 1; 
-    /*background-image: url(../../../assets/um.png);
+  padding-top: 0em;
+  background: var(--main-bg-color);
+}
+
+.foto-movi {
+  /*width: 100%;*/
+  position: relative;
+  opacity: 1;
+  /*background-image: url(../../../assets/um.png);
     background-image: está en style en htlm*/
-    background-size: 200%;
-    animation: movimiento 10s infinite linear alternate;
+  background-size: 200%;
+  animation: movimiento 10s infinite linear alternate;
+}
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
   }
-  @keyframes movimiento{
-  from
-  {background-position:bottom left;}
-  to
-  {background-position:top right;}
+  to {
+    background-position: top right;
   }
-  
+}
 
-  .grad {
-    padding: 2em;
-    position: relative;
-    background: -webkit-linear-gradient(bottom right, #025877, var(--main-bg-color));
-  }
+.grad {
+  padding: 2em;
+  position: relative;
+  background: -webkit-linear-gradient(
+    bottom right,
+    #025877,
+    var(--main-bg-color)
+  );
+}
 
-  .icom-grande{
-    position: absolute;
-    right: 10px;
-    top: 6px;
-    font-size: 8em;
-    color:red ;
-  }
-  .card{
-    color:black;
-  }
+.icom-grande {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-size: 8em;
+  color: red;
+}
+.card {
+  color: black;
+}
 
-  img{
-   
-        width: 25%;
-        height: 53%;}
+img {
+  margin-right: 0.7em;
+  width: 25%;
+  height: 53%;
+}
