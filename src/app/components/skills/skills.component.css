@@ -17,27 +17,26 @@ font-size: 1em;
 .grad h6{padding-top: 1rem;}.fa-angles-down{
     --fa-animation-duration: 5s
   }
-  .icom-grande{
+  .icom-grande-izq{
     position: absolute;
-    right: 10px;
     top: 6px;
     font-size: 8em;
     color:red ;
   }
 
-  .foto-movi{
+  .foto-quieta{
     /*width: 100%;*/
     position: relative;
-    opacity: 1; 
+    opacity: .7; 
     /*background-image: está en style en htlm*/
     background-size: 200%;
-    animation: movimiento 10s infinite linear alternate;
+    /*animation: movimiento 10s infinite linear alternate;
   }
   @keyframes movimiento{
   from
   {background-position:bottom left;}
   to
-  {background-position:top right;}
+  {background-position:top right;}*/
   }
   
   .grad {

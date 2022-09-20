@@ -6,7 +6,7 @@
   .foto-movi{
     /*width: 100%;*/
     position: relative;
-    opacity: 1; 
+    opacity: .7; 
     /*background-image: url(../../../assets/um.png);
     background-image: está en style en htlm*/
     background-size: 200%;
