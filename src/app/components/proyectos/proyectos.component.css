@@ -30,9 +30,10 @@
       var(--main-bg-color)
     );
   }
-
-  .icom-grande-izq {
+  
+  .icom-grande {
     position: absolute;
+    right: 10px;
     top: 6px;
     font-size: 8em;
     color: red;
@@ -48,4 +49,3 @@
   }
   
   h6{color: blue;}
-

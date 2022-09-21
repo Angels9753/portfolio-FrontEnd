@@ -1,11 +1,7 @@
 div{
-    background-color: #04bbff ;
+    background-color: var(--main-bg-color);
 }
-/*
-app-social{
-    float: right;
-    margin-top: 25px;
-} */
+
 
 
 
