@@ -1,27 +1,3 @@
-div{
-    background-color:var(--main-bg-color);
+div {
+  background-color: var(--main-bg-color);
 }
-
-.container{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;   
-    height: 60px;
-}
-
-
-/*------------------------------------------------------------------------------*/
-
-#logoAP{ width: 150px;
-margin-right:  36px;
-}
-
-
-
-.btn{
-  padding: 5px;
-  margin: 10px;
-  font-size: 0.75rem;
-}
-
-/* Visión desde celular */

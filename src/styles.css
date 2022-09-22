@@ -1,8 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --main-bg-color: #04bbff;
-} 
+}
+
+.sobre-mi {
+  padding-top: 0em;
+  background: var(--main-bg-color);
+}
+
+.grad {
+  padding: 2em;
+  position: relative;
+  background: -webkit-linear-gradient(
+    bottom right,
+    #025877,
+    var(--main-bg-color)
+  );
+}
+
+.icom-grande {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-size: 8em;
+  color: red;
+}
+
+.icom-grande-izq {
+  position: absolute;
+  top: 6px;
+  font-size: 8em;
+  color: red;
+}
 
 .card {
+  color: black;
   background-color: rgb(248, 241, 201);
+}
+
+h6 {
+  color: blue;
+}
+
+.foto-quieta {
+  position: relative;
+  opacity: 0.7;
+  /*background-image: está en style en htlm*/
+  background-size: 200%;
+}
+
+#logoAP{ width: 150px;
+  margin-left: 36px;
+  }
+  
+  .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;   
+    height: 60px;
 }

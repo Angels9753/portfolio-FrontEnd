@@ -3,49 +3,9 @@
   background: var(--main-bg-color);
 }
 
-.foto-quieta {
-  /*width: 100%;*/
-  position: relative;
-  opacity: .7;
-  /*background-image: url(../../../assets/um.png);
-    background-image: está en style en htlm*/
-  background-size: 200%;
-  /*animation: movimiento 10s infinite linear alternate;
-}
-@keyframes movimiento {
-  from {
-    background-position: bottom left;
-  }
-  to {
-    background-position: top right;
-  }*/
-}
-
-.grad {
-  padding: 2em;
-  position: relative;
-  background: -webkit-linear-gradient(
-    bottom right,
-    #025877,
-    var(--main-bg-color)
-  );
-}
-
-.icom-grande {
-  position: absolute;
-  right: 10px;
-  top: 6px;
-  font-size: 8em;
-  color: red;
-}
-.card {
-  color: black;
-}
-
 img {
   margin-right: 0.7em;
   width: 25%;
   height: 53%;
 }
 
-h6{color: blue;}
