@@ -5,6 +5,10 @@
     height: 60px;
 }
 
+div{
+  background-color: var(--main-bg-color);
+}
+
 .redes {
     font-size: 1.75rem;}
 

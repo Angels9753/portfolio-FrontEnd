@@ -1,3 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --main-bg-color: #04bbff;} /*ff9204*/
+  --main-bg-color: #04bbff;
+} 
+
+.card {
+  background-color: rgb(248, 241, 201);
+}
