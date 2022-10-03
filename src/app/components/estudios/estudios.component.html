@@ -9,73 +9,19 @@
     <div class="col-8 text-white grad">
       <h1 class="display-5 text-dark">Estudios</h1>
       <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
+        <div class="col" *ngFor="let estudios of EstudiosList">
           <article class="card h-100">
             <div class="card-body">
               <div class="d-flex">
                 <img
-                  src="../../../assets/logo-donbosco.jpg"
+                  [src]="estudios.urllogo"
                   class="rounded-circle border border-black border-3"
                   alt="..."
                 />
                 <div>
-                  <h6>Instituto Don Bosco de Ramos Mejía</h6>
-                  <p>Bachiller-Comercial</p>
-                  <div class="card-footer text-muted">1969-1974</div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  src="../../../assets/Logo-fcenuba.png"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>Facultad de Cs.Exactas - UBA</h6>
-                  <p>Licenciado en Química</p>
-                  <div class="card-footer text-muted">1975-1980</div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  src="../../../assets/logo-ntraSraNieves.png"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>Instituto Superior Ntra. Sra. de las Nieves</h6>
-                  <p>Profesor de Física y Química</p>
-                  <div class="card-footer text-muted">1985-1988</div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  src="../../../assets/logo-universidad-de-moron.jpg"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>Facultad de Informática - Univ. de Morón</h6>
-                  <p>Licenciado en Sistemas de Computación</p>
-                  <div class="card-footer text-muted">1990-1995</div>
+                  <h6>{{estudios.instituto}}</h6>
+                  <p>{{estudios.titulo}}</p>
+                  <div class="card-footer text-muted">{{estudios.desdehasta}}</div>
                 </div>
               </div>
             </div>

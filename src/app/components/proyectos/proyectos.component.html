@@ -10,130 +10,28 @@
     <div class="col-8 text-white grad">
       <h1 class="display-5 text-dark">Proyectos</h1>
       <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
+        <div class="col" *ngFor="let proyecto of ProyectosList">
           <article class="card h-100">
             <div class="card-body">
               <div class="d-flex">
                 <img
-                  src="../../../assets/logo-AOO.jpg"
+                  [src]="proyecto.urllogo"
                   class="rounded-circle border border-black border-3"
                   alt="..."
                 />
                 <div>
-                  <h6>Asociaciones Odontológicas</h6>
-                  <p>Zona Oeste y Partido de San Martín</p>
+                  <h6>{{ proyecto.empresa }}</h6>
+                  <p>{{ proyecto.subtitulo }}</p>
                   <p class="small fw-light">
-                    Networking y Software de control de Stock de materiales odontológicos y Liquidación de
-                    Obras Sociales.
+                    {{ proyecto.descripcion }}
                   </p>
                   <div class="card-footer text-muted text-end">
-                    <a href="https://aooeste.com.ar/" target="_blank" class="btn btn-primary btn-sm"
+                    <a
+                      [href]="proyecto.website"
+                      target="_blank"
+                      class="btn btn-primary btn-sm"
                       ><small>WebSite</small></a
                     >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  src="../../../assets/logo-donbosco.jpg"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>Institucion Salesiana</h6>
-                  <p>Obra Escolar Don Bosco de Ramos Mejía</p>
-                  <p class="small fw-light">
-                    Networking y Software Contable, Administración Escolar y
-                    Liquidación de sueldos
-                  </p>
-                  <div class="card-footer text-muted text-end">
-                    <a href="https://www.donboscoramos.edu.ar/" target="_blank" class="btn btn-primary btn-sm"
-                    ><small>WebSite</small></a
-                  >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  src="../../../assets/logo-Lasalle.jpg"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>Institución de La Salle</h6>
-                  <p>Argentina-Paraguay</p>
-                  <p class="small fw-light">
-                    Software de seguimiento psicopedagógico para alumnos de la
-                    institución.
-                  </p>
-                  <div class="card-footer text-muted text-end">
-                    <a href="http://lasalle.edu.ar/" target="_blank" class="btn btn-primary btn-sm"
-                      ><small>WebSite</small></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  src="../../../assets/logo-unlam.jpg"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>Universidad Nacional de la Matanza</h6>
-                  <p>U.N.La.M.</p>
-                  <p class="small fw-light">
-                    Software on line de gestión académica, inscripción a
-                    cursadas y exámenes.
-                  </p>
-                  <div class="card-footer text-muted text-end">
-                    <a href="https://www.unlam.edu.ar/" target="_blank" class="btn btn-primary btn-sm"
-                    ><small>WebSite</small></a
-                  >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  src="../../../assets/logo-universidad-de-moron.jpg"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>Universidad de Morón</h6>
-                  <p>Facultad de Ingeniería Informática</p>
-                  <p class="small fw-light">
-                    Primera página web de Cátedra de toda la Universidad. Para
-                    dar asistencia on line a los alumnos cursantes de la Materia Base de Datos.
-                  </p>
-                  <div class="card-footer text-muted text-end">
-                    <a href="https://bdatos.wordpress.com/" target="_blank" class="btn btn-primary btn-sm"
-                    ><small>WebSite</small></a
-                  >
                   </div>
                 </div>
               </div>

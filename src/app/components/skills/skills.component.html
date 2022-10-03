@@ -1,85 +1,68 @@
 <section id="skills sobre-mi">
-    <!--<div class="container-fluid vh-100 ">-->
-        <div class="row">
-
-            <div class="col-12 col-lg-8 text-white grad">
-                <h1 class="display-5 text-dark">Habilidades</h1>
-                <div class="row">
-                    <div class="col-12 col-lg-6  grad ">
-                        <h3>Soft Skills</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 95%;"
-                                aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Liderazgo 95%</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-custom" role="progressbar" style="width: 90%;"
-                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Motivación 90%</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" style="width: 90%;"
-                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Trabajo en Equipo 90%</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;"
-                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Gestión de tiempo 80%</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar text-dark bg-warning" role="progressbar" style="width: 100%;"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Paciencia 100%</div>
-                        </div>
-                        <h6>Idiomas</h6>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 40%"
-                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Italiano 40%</div>
-                            <div class="progress-bar " role="progressbar" style="width: 30%" aria-valuenow="30"
-                                aria-valuemin="0" aria-valuemax="100">Francés 30%</div>
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"
-                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Inglés 60%</div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6 text-white grad">
-                        <h3>Hard Skills</h3>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 35%;"
-                                aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"> HTML 35%</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-custom" role="progressbar" style="width: 30%;"
-                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"> CSS 30%</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar text-dark bg-warning" role="progressbar" style="width: 25%;"
-                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">JS 25%</div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;"
-                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Networking 80%</div>
-                        </div>
-                        <div class="progress ">
-                            <div class="progress-bar progress-bar  bg-secondary" role="progressbar"
-                                style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">SQL 90%
-                            </div>
-                        </div>
-                        <div class="progress ">
-                            <div class="progress-bar progress-bar  bg-success" role="progressbar"
-                                style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">VB.Net
-                                80%
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+  <!--<div class="container-fluid vh-100 ">-->
+  <div class="row">
+    <div class="col-12 col-lg-8 text-white grad">
+      <h1 class="display-5 text-dark">Habilidades</h1>
+      <div class="row">
+        <div class="col-12 col-lg-6 grad">
+          <h3>Soft Skills</h3>
+          <div class="progress" *ngFor="let habil of SkillS">
+            <div
+              class="progress-bar"
+              [class]="habil.color"
+              role="progressbar"
+              [style.width]="habil.porcentaje + '%'"
+              [attr.aria-valuenow]="habil.porcentaje"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              {{ habil.habilidad }} {{ habil.porcentaje }}%
             </div>
-
-            <div class="col-12 col-lg-4 foto-quieta" style="background-image: url(assets/gente.png);">
-                <!--background foto Reunion-->
-                <i class="fa-solid fa-chart-bar icom-grande-izq"></i>
+          </div>
+          <h6>Idiomas</h6>
+          <div class="progress">
+            <div  *ngFor="let habil of SkillI"
+              class="progress-bar"
+              [class]="habil.color"
+              role="progressbar"
+              [style.width]="habil.porcentaje + '%'"
+              [attr.aria-valuenow]="habil.porcentaje"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              {{ habil.habilidad }} {{ habil.porcentaje }}%
             </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 text-white grad">
+          <h3>Hard Skills</h3>
+          <div class="progress" *ngFor="let habil of SkillH">
+            <div
+              class="progress-bar"
+              [class]="habil.color"
+              role="progressbar"
+              [style.width]="habil.porcentaje + '%'"
+              [attr.aria-valuenow]="habil.porcentaje"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              {{ habil.habilidad }} {{ habil.porcentaje }}%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <!--<div class="col-12 text-center">
+    <div
+      class="col-12 col-lg-4 foto-quieta"
+      style="background-image: url(assets/gente.png)" >
+      <!--background foto Reunion-->
+      <i class="fa-solid fa-chart-bar icom-grande-izq"></i>
+    </div>
+
+    <!--<div class="col-12 text-center">
                 <a href="#detalles"><i class="fa-solid fa-angles-down fa-bounce fa-2xl" style="color:black"></i></a>
             </div>-->
-        </div>
-    <!--</div>-->
+  </div>
+  <!--</div>-->
 </section>

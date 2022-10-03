@@ -13,20 +13,10 @@
         <article class="card h-100">
           <div class="card-body">
             <p style="text-align: justify">
-              Mi nombre es <strong>Angel "Cay" Sapienza</strong>.<br />
-              He desarrollado una amplia trayectoria en el campo de las TIC.<br />
-              Comencé mi carrera con trabajos Free Lance en varias instituciones
-              relacionadas con la salud.<br />
-              Paralelamente llevé adelante mi tarea como docente secundario,
-              terciario e universitario.<br />
-              Con el tiempo pude dirigir proyectos desde sus etapas primigenias,
-              generando las bases sobre las cuales actualmente varias
-              instituciones educativas basan sus sistemas de administración
-              académica.<br />
-              Con el tiempo volví al desarrollo Free Lance y a la consultoría
-              informática para numerosos comercios de la zona Oeste del AMBA.<br />
-              Actualmente estoy retirado de la actividad y actualizándome en las
-              nuevas tecnologías.
+                Mi Nombre es <strong>{{miPorfolio.datos[0].nombre}}.</strong>
+              </p>
+            <p style="text-align: justify">
+              {{miPorfolio.datos[0].descripcion}}
             </p>
           </div>
         </article>
@@ -34,3 +24,5 @@
     </div>
   </div>
 </section>
+
+

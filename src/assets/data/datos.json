@@ -1,0 +1,235 @@
+{
+  "datos": [
+    {
+      "nombre": "Angel Cay Sapienza",
+      "subtitulo": "Desarrolador full Stack Jr.",
+      "urlfoto": "../../../assets/foto4x4.png",
+      "descripcion": "He desarrollado una amplia trayectoria en el campo de las TIC. Comencé mi carrera con trabajos Free Lance en varias instituciones relacionadas con la salud. Paralelamente llevé adelante mi tarea como docente secundario, terciario e universitario. Con el tiempo pude dirigir proyectos desde sus etapas primigenias, generando las bases sobre las cuales actualmente varias instituciones educativas basan sus sistemas de administración académica. Con el tiempo volví al desarrollo Free Lance y a la consultoría informática para numerosos comercios de la zona Oeste del AMBA. Actualmente estoy retirado de la actividad y actualizándome en las nuevas tecnologías."
+    }
+  ],
+  "skillSo": [
+    {
+      "tipo": "s",
+      "habilidad": "Liderazgo",
+      "porcentaje": "95",
+      "color": "bg-success"
+    },
+    {
+      "tipo": "s",
+      "habilidad": "Motivación",
+      "porcentaje": "90",
+      "color": "bg-custom"
+    },
+    {
+      "tipo": "s",
+      "habilidad": "Trabajo en Equipo",
+      "porcentaje": "90",
+      "color": "bg-dark"
+    },
+    {
+      "tipo": "s",
+      "habilidad": "Gestión de tiempo",
+      "porcentaje": "80",
+      "color": "bg-danger"
+    },
+    {
+      "tipo": "s",
+      "habilidad": "Paciencia",
+      "porcentaje": "100",
+      "color": "text-dark bg-warning"
+    }
+  ],
+  "skillId": [
+    {
+      "tipo": "i",
+      "habilidad": "Italiano",
+      "porcentaje": "40",
+      "color": "bg-success"
+    },
+    {
+      "tipo": "i",
+      "habilidad": "Francés",
+      "porcentaje": "30",
+      "color": "bg-custom"
+    },
+    {
+      "tipo": "i",
+      "habilidad": "Inglés",
+      "porcentaje": "60",
+      "color": "bg-danger"
+    }
+  ],
+  "skillHa": [
+    {
+      "tipo": "h",
+      "habilidad": "HTML",
+      "porcentaje": "35",
+      "color": "bg-danger"
+    },
+    {
+      "tipo": "h",
+      "habilidad": "CSS",
+      "porcentaje": "30",
+      "color": "bg-custom"
+    },
+    {
+      "tipo": "h",
+      "habilidad": "JS",
+      "porcentaje": "25",
+      "color": "text-dark bg-warning"
+    },
+    {
+      "tipo": "h",
+      "habilidad": "Networking",
+      "porcentaje": "80",
+      "color": "bg-dark"
+    },
+    {
+      "tipo": "h",
+      "habilidad": "SQL",
+      "porcentaje": "90",
+      "color": "bg-secondary"
+    },
+    {
+      "tipo": "h",
+      "habilidad": "VB.Net",
+      "porcentaje": "80",
+      "color": "bg-succes"
+    }
+  ],
+  "estudios": [
+    {
+      "urllogo": "../../../assets/logo-donbosco.jpg",
+      "instituto": "Instituto Don Bosco de Ramos Mejía",
+      "titulo": "Bachiller-Comercial",
+      "desdehasta": "1969-1974"
+    },
+    {
+      "urllogo": "../../../assets/Logo-fcenuba.png",
+      "instituto": "Facultad de Cs.Exactas - UBA",
+      "titulo": "Licenciado en Química",
+      "desdehasta": "1975-1980"
+    },
+    {
+      "urllogo": "../../../assets/logo-ntraSraNieves.png",
+      "instituto": "Instituto Superior Ntra. Sra. de las Nieves",
+      "titulo": "Profesor de Física y Química",
+      "desdehasta": "1985-1988"
+    },
+    {
+      "urllogo": "../../../assets/logo-universidad-de-moron.jpg",
+      "instituto": "Facultad de Informática - Univ. de Morón",
+      "titulo": "Licenciado en Sistemas de Computación",
+      "desdehasta": "1990-1995"
+    }
+  ],
+  "experiencia": [
+    {
+      "icono": "fa-solid fa-gear",
+      "empresa": "Tintorería Industrial Corbella SRL",
+      "cargo": "Sub Jefe de Laboratorio de I&D",
+      "descripcion": "Desarrollo de nuevos colores para la industria textil.",
+      "desdehasta": "1981-1984"
+    },
+    {
+      "icono": "fa-solid fa-radio",
+      "empresa": "Componentes Electrónicos Sapienza SRL",
+      "cargo": "Técnico de Laboratorio de Inductancias",
+      "descripcion": "Diseño de componentes para la industria electrónica.",
+      "desdehasta": "1984-1988"
+    },
+    {
+      "icono": "fa-solid fa-computer",
+      "empresa": "Sapienza Sistemas Informáticos",
+      "cargo": "Análisis y Desarrollo Free-Lance",
+      "descripcion": "Desarrollo de sistemas informáticos para el sector de la salud y educación.",
+      "desdehasta": "1985-1988"
+    },
+    {
+      "icono": "fa-solid fa-tower-cell",
+      "empresa": "Universidad de Morón",
+      "cargo": "Analista Trainee",
+      "descripcion": "Proyecto de investigacion de radio enlaces a nivel nacional en la empresa DatoCom SRL.",
+      "desdehasta": "1990-1990"
+    },
+    {
+      "icono": "fa-solid fa-computer",
+      "empresa": "A&R SRL Consultora Informática de Empresas",
+      "cargo": "Analista de Sistemas Free Lance",
+      "descripcion": "Desarrollo de sistemas para el sector de la salud y logística.",
+      "desdehasta": "1990-1992"
+    },
+    {
+      "icono": "fa fa-solid fa-computer",
+      "empresa": "Universidad Nacional de la Matanza",
+      "cargo": "Director Centro de Cómputos",
+      "descripcion": "Diseño y gerenciamiento de la gestión educativa de 15.000 alumnos y 1.000 docentes.",
+      "desdehasta": "1992-1999"
+    },
+    {
+      "icono": "fa fa-briefcase",
+      "empresa": "Universidad Nacional de la Matanza",
+      "cargo": "Pro-Secretario de Informática y Comunicaciones",
+      "descripcion": "Gerenciamiento de todo el sector informático, tanto administrativo como educativo.",
+      "desdehasta": "1999-2000"
+    },
+    {
+      "icono": "fa-solid fa-computer",
+      "empresa": "Sapienza Sistemas Informáticos",
+      "cargo": "Análisis y Desarrollo Free-Lance",
+      "descripcion": "Desarrollo de sistemas para el sector comercial minorista y logística.",
+      "desdehasta": "2001-2010"
+    },
+    {
+      "icono": "fa-solid fa-computer",
+      "empresa": "Institucion Salesiana de Ramos Mejía",
+      "cargo": "Gerente de Sistemas",
+      "descripcion": "Gerenciamiento de todo el sector informático, tanto administrativo como educativo.",
+      "desdehasta": "1989-2014"
+    },
+    {
+      "icono": "fa fa-briefcase",
+      "empresa": "Institucion Salesiana de Ramos Mejía",
+      "cargo": "Gerente de Recursos Humanos",
+      "descripcion": "Gerenciamiento de la oficina de Personal con una planta de 300 empleados.",
+      "desdehasta": "2014-2021"
+    }
+  ],
+  "proyectos": [
+    {
+      "urllogo": "../../../assets/logo-AOO.jpg",
+      "empresa": "Asociaciones Odontológicas",
+      "subtitulo": "Zona Oeste y Partido de San Martín",
+      "descripcion": "Networking y Software de control de Stock de materiales odontológicos y Liquidación de Obras Sociales.",
+      "website": "https://aooeste.com.ar/"
+    },
+    {
+      "urllogo": "../../../assets/logo-donbosco.jpg",
+      "empresa": "Institucion Salesiana",
+      "subtitulo": "Obra Escolar Don Bosco de Ramos Mejía",
+      "descripcion": "Networking y Software Contable, Administración Escolar y Liquidación de sueldos.",
+      "website": "https://www.donboscoramos.edu.ar/"
+    },
+    {
+      "urllogo": "../../../assets/logo-Lasalle.jpg",
+      "empresa": "Institución de La Salle",
+      "subtitulo": "Argentina-Paraguay",
+      "descripcion": "Software de seguimiento psicopedagógico para alumnos de la institución.",
+      "website": "http://lasalle.edu.ar/"
+    },
+    {
+      "urllogo": "../../../assets/logo-unlam.jpg",
+      "empresa": "Universidad Nacional de la Matanza",
+      "subtitulo": "Secretaría de Informática y Comunicaciones",
+      "descripcion": "Software on line de gestión académica, inscripción a cursadas y exámenes.",
+      "website": "https://www.unlam.edu.ar/"
+    },
+    {
+      "urllogo": "../../../assets/logo-universidad-de-moron.jpg",
+      "empresa": "Universidad de Morón",
+      "subtitulo": "Facultad de Ingeniería Informática - Cátedra de Bases de Datos",
+      "descripcion": "Primera página web de Cátedra de toda la Universidad. Para dar asistencia on line a los alumnos cursantes de la Materia Base de Datos.",
+      "website": "https://bdatos.wordpress.com/"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+//Para migrar con 
+//Datos principales
+datos[0]
+  nombre = Angel Cay Sapienza
+  subtitulo = Desarrolador full Stack Jr.
+  url-foto= ../../../assets/foto4x4.png
+  descripcion = Mi nombre es <strong>Angel "Cay" Sapienza</strong>.<br/> He desarrollado una amplia trayectoria en el campo de las TIC.<br/> Comencé mi carrera con trabajos Free Lance en varias instituciones relacionadas con la salud.<br/> Paralelamente llevé adelante mi tarea como docente secundario, terciario e universitario.<br/> Con el tiempo pude dirigir proyectos desde sus etapas primigenias, generando las bases sobre las cuales actualmente varias instituciones educativas basan sus sistemas de administración académica.<br/> Con el tiempo volví al desarrollo Free Lance y a la consultoría informática para numerosos comercios de la zona Oeste del AMBA.<br/> Actualmente estoy retirado de la actividad y actualizándome en las nuevas tecnologías.
+
+// Habilidades
+skill[0]
+  tipo s = s
+  habilidad s = Liderazgo
+  porcentaje s= 95
+  color s = bg-success
+skill[1]
+  tipo s = s
+  habilidad s = Motivación
+  porcentaje s= 90
+  color s = bg-custom
+skill[2]
+  tipo s = s
+  habilidad s = Trabajo en Equipo
+  porcentaje s= 90
+  color s = bg-dark
+skill[3]
+  tipo s = s
+  habilidad s = Gestión de tiempo
+  porcentaje s= 80
+  color s = bg-danger
+skill[4]
+  tipo s = s
+  habilidad s = Paciencia
+  porcentaje s= 100
+  color s = text-dark bg-warning
+skill[5]
+  tipo s = i
+  habilidad s = Italiano
+  porcentaje s= 40
+  color s = bg-success
+skill[6]
+  tipo s = i
+  habilidad s = Francés
+  porcentaje s= 30
+  color s = bg-custom
+skill[7]
+  tipo s = i
+  habilidad s = Inglés
+  porcentaje s= 60
+  color s = bg-danger
+skill[8]
+  tipo s = h
+  habilidad s = HTML
+  porcentaje s= 35
+  color s = bg-danger
+skill[9]
+  tipo s = h
+  habilidad s = CSS
+  porcentaje s= 30
+  color s = bg-custom
+skill[10]
+  tipo s = h
+  habilidad s = JS
+  porcentaje s= 25
+  color s = text-dark bg-warning
+skill[11]
+  tipo s = h
+  habilidad s = Networking
+  porcentaje s= 80
+  color s = bg-dark
+skill[12]
+  tipo s = h
+  habilidad s = SQL
+  porcentaje s= 90
+  color s = bg-secondary
+skill[13]
+  tipo s = h
+  habilidad s = VB.Net
+  porcentaje s= 80
+  color s = bg-succes
+// Estudios
+estudios[0]
+  urllogo s = ../../../assets/logo-donbosco.jpg
+  instituto s = Instituto Don Bosco de Ramos Mejía
+  titulo s= Bachiller-Comercial
+  desde-hasta s = 1969-1974
+estudios[1]
+  urllogo s = ../../../assets/Logo-fcenuba.png
+  instituto s = Facultad de Cs.Exactas - UBA
+  titulo s= Licenciado en Química
+  desde-hasta s = 1975-1980
+estudios[2]
+  urllogo s = ../../../assets/logo-ntraSraNieves.png
+  instituto s = Instituto Superior Ntra. Sra. de las Nieves
+  titulo s= Profesor de Física y Química
+  desde-hasta s = 1985-1988
+estudios[3]
+  urllogo s = ../../../assets/logo-universidad-de-moron.jpg
+  instituto s = Facultad de Informática - Univ. de Morón
+  titulo s= Licenciado en Sistemas de Computación
+  desde-hasta s = 1990-1995
+//Experiencia
+experiencia[0]
+  icono s = fa-solid fa-gear
+  empresa s = Tintorería Industrial Corbella SRL
+  cargo s= Sub Jefe de Laboratorio de I&D
+  descripcion s = Desarrollo de nuevos colores para la industria textil.
+  desde-hasta s = 1981-1984
+experiencia[1]
+  icono s = fa-solid fa-radio
+  empresa s = Componentes Electrónicos Sapienza SRL
+  cargo s= Técnico de Laboratorio de Inductancias
+  descripcion s =Diseño de componentes para la industria electrónica.
+  desde-hasta s = 1984-1988
+experiencia[2]
+  icono s = fa-solid fa-computer
+  empresa s = Sapienza Sistemas Informáticos
+  cargo s= Análisis y Desarrollo Free-Lance
+  descripcion s =Desarrollo de sistemas informáticos para el sector de la salud y educación.
+  desde-hasta s = 1985-1988
+experiencia[3]
+  icono s = fa-solid fa-tower-cell
+  empresa s = Universidad de Morón
+  cargo s= Analista Trainee
+  descripcion s =Proyecto de investigacion de radio enlaces a nivel nacional en la empresa DatoCom SRL.
+  desde-hasta s = 1990-1990
+experiencia[4]
+  icono s = fa-solid fa-computer
+  empresa s = A&R SRL Consultora Informática de Empresas
+  cargo s= Analista de Sistemas Free Lance
+  descripcion s =Desarrollo de sistemas para el sector de la salud y logística.
+  desde-hasta s = 1990-1992
+experiencia[5]
+  icono s = fa fa-solid fa-computer
+  empresa s = Universidad Nacional de la Matanza
+  cargo s= Director Centro de Cómputos
+  descripcion s =Diseño y gerenciamiento de la gestión educativa de 15.000 alumnos y 1.000 docentes.
+  desde-hasta s = 1992-1999
+experiencia[6]
+  icono s = fa fa-briefcase
+  empresa s = Universidad Nacional de la Matanza
+  cargo s= Pro-Secretario de Informática y Comunicaciones
+  descripcion s =Gerenciamiento de todo el sector informático, tanto administrativo como educativo.
+  desde-hasta s = 1999-2000
+experiencia[7]
+  icono s = fa-solid fa-computer
+  empresa s = Sapienza Sistemas Informáticos
+  cargo s= Análisis y Desarrollo Free-Lance
+  descripcion s =Desarrollo de sistemas para el sector comercial minorista y logística.
+  desde-hasta s = 2001-2010
+experiencia[8]
+  icono s = fa-solid fa-computer
+  empresa s = Institucion Salesiana de Ramos Mejía
+  cargo s= Gerente de Sistemas
+  descripcion s =Gerenciamiento de todo el sector informático, tanto administrativo como educativo.
+  desde-hasta s = 1989-2014
+experiencia[9]
+  icono s = fa fa-briefcase
+  empresa s = Institucion Salesiana de Ramos Mejía
+  cargo s= Gerente de Recursos Humanos
+  descripcion s =Gerenciamiento de la oficina de Personal con una planta de 300 empleados.
+  desde-hasta s = 2014-2021
+// Proyectos
+proyectos[0]
+  urllogo s =../../../assets/logo-AOO.jpg
+  empresa s = Asociaciones Odontológicas
+  subtitulo s= Zona Oeste y Partido de San Martín
+  descripcion s =Networking y Software de control de Stock de materiales odontológicos y Liquidación de Obras Sociales.
+  website s = https://aooeste.com.ar/
+proyectos[1]
+  urllogo s =../../../assets/logo-donbosco.jpg
+  empresa s = Institucion Salesiana
+  subtitulo s= Obra Escolar Don Bosco de Ramos Mejía
+  descripcion s = Networking y Software Contable, Administración Escolar y Liquidación de sueldos.
+  website s = https://www.donboscoramos.edu.ar/
+proyectos[2]
+  urllogo s =../../../assets/logo-Lasalle.jpg
+  empresa s = Institución de La Salle
+  subtitulo s= Argentina-Paraguay
+  descripcion s =Software de seguimiento psicopedagógico para alumnos de la institución.
+  website s = http://lasalle.edu.ar/
+proyectos[3]
+  urllogo s =../../../assets/logo-unlam.jpg
+  empresa s = Universidad Nacional de la Matanza
+  subtitulo s= Secretaría de Informática y Comunicaciones
+  descripcion s =Software on line de gestión académica, inscripción a cursadas y exámenes.
+  website s = https://www.unlam.edu.ar/
+proyectos[4]
+  urllogo s =../../../assets/logo-universidad-de-moron.jpg
+  empresa s = Universidad de Morón
+  subtitulo s= Facultad de Ingeniería Informática - Cátedra de Bases de Datos
+  descripcion s =Primera página web de Cátedra de toda la Universidad. Para dar asistencia on line a los alumnos cursantes de la Materia Base de Datos.
+  website s = https://bdatos.wordpress.com/
