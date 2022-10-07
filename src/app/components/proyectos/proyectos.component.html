@@ -1,42 +1,44 @@
 <section id="proyectos" class="sobre-mi">
-  <div class="row">
-    <div
-      class="col-4 foto-quieta"
-      style="background-image: url(../../../assets/pantalla.jpeg)"
-    >
-      <!--background foto aula-->
-      <i class="fa-solid fa-person-digging icom-grande"></i>
-    </div>
-    <div class="col-8 text-white grad">
-      <h1 class="display-5 text-dark">Proyectos</h1>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col" *ngFor="let proyecto of ProyectosList">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  [src]="proyecto.urllogo"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>{{ proyecto.empresa }}</h6>
-                  <p>{{ proyecto.subtitulo }}</p>
-                  <p class="small fw-light">
-                    {{ proyecto.descripcion }}
-                  </p>
-                  <div class="card-footer text-muted text-end">
-                    <a
-                      [href]="proyecto.website"
-                      target="_blank"
-                      class="btn btn-primary btn-sm"
-                      ><small>WebSite</small></a
-                    >
+  <div class="container-fluid">
+    <div class="row">
+      <div
+        class="col-4 foto-quieta"
+        style="background-image: url(../../../assets/pantalla.jpeg)"
+      >
+        <!--background foto aula-->
+        <i class="fa-solid fa-person-digging icom-grande"></i>
+      </div>
+      <div class="col-8 text-white grad">
+        <h1 class="display-5 text-dark">Proyectos</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col" *ngFor="let proyecto of ProyectosList">
+            <article class="card h-100">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img
+                    [src]="proyecto.urllogo"
+                    class="rounded-circle border border-black border-3"
+                    alt="..."
+                  />
+                  <div>
+                    <h6>{{ proyecto.empresa }}</h6>
+                    <p>{{ proyecto.subtitulo }}</p>
+                    <p class="small fw-light">
+                      {{ proyecto.descripcion }}
+                    </p>
+                    <div class="card-footer text-muted text-end">
+                      <a
+                        [href]="proyecto.website"
+                        target="_blank"
+                        class="btn btn-primary btn-sm"
+                        ><small>WebSite</small></a
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </div>
     </div>

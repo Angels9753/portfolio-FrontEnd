@@ -12,6 +12,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import{HttpClientModule} from '@angular/common/http';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import{HttpClientModule} from '@angular/common/http';
     EstudiosComponent,
     ExperienciaComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
  
   ],
   imports: [

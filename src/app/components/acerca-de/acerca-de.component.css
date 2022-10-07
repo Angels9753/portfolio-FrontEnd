@@ -36,42 +36,42 @@ div{
 p{margin-left: 3em;}
 
 */
-.banner img{
-    position: absolute; 
-        width: 100%;
-        height: 100%;  
+.banner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .container-banner {
-     position: relative;
-   }
-  
-  .container-nombre {
-    top: 20px; 
-    position: relative;
-    padding-left: 50px;
-    color: white;
+  position: relative;
+}
+
+.container-nombre {
+  top: 20px;
+  position: relative;
+  padding-left: 50px;
+  color: white;
+}
+
+.container-nombre h3 {
+  background: linear-gradient(
+    to right,
+    #eaeef0 0,
+    hsl(0, 0%, 100%) 10%,
+    var(--main-bg-color) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: titulo 3s infinite linear;
+}
+@keyframes titulo {
+  0% {
+    background-position: 0;
   }
-  
-  
-  .container-nombre h3 {
-    background: linear-gradient(
-      to right,
-      #eaeef0 0,
-      hsl(0, 0%, 100%) 10%,
-      var(--main-bg-color) 20%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: titulo 3s infinite linear;
+  90% {
+    background-position: 600px;
   }
-  @keyframes titulo {
-    0% {
-      background-position: 0;
-    }
-    90% {
-      background-position: 600px;
-    }
-    100% {
-      background-position: 600px;
-    }
+  100% {
+    background-position: 600px;
   }
+}

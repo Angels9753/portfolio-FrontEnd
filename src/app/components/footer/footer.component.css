@@ -1,3 +1,20 @@
-div {
-  background-color: var(--main-bg-color);
+footer{
+  background: var(--main-bg-color);
+  font-size: small;
+}
+
+@media screen and (max-width: 860px) {
+
+#logo-AP{
+  text-align: center;
+}
+
+.mt-3{
+  /*margin-top:  12em; */
+  }
+
+.m-0{
+    text-align: center;
+}
+
 }

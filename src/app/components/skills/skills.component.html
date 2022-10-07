@@ -1,68 +1,70 @@
 <section id="skills sobre-mi">
-  <!--<div class="container-fluid vh-100 ">-->
-  <div class="row">
-    <div class="col-12 col-lg-8 text-white grad">
-      <h1 class="display-5 text-dark">Habilidades</h1>
-      <div class="row">
-        <div class="col-12 col-lg-6 grad">
-          <h3>Soft Skills</h3>
-          <div class="progress" *ngFor="let habil of SkillS">
-            <div
-              class="progress-bar"
-              [class]="habil.color"
-              role="progressbar"
-              [style.width]="habil.porcentaje + '%'"
-              [attr.aria-valuenow]="habil.porcentaje"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              {{ habil.habilidad }} {{ habil.porcentaje }}%
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-12 col-lg-8 text-white grad">
+        <h1 class="display-5 text-dark">Habilidades</h1>
+        <div class="row">
+          <div class="col-12 col-lg-6 grad">
+            <h3>Soft Skills</h3>
+            <div class="progress" *ngFor="let habil of SkillS">
+              <div
+                class="progress-bar"
+                [class]="habil.color"
+                role="progressbar"
+                [style.width]="habil.porcentaje + '%'"
+                [attr.aria-valuenow]="habil.porcentaje"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                {{ habil.habilidad }} {{ habil.porcentaje }}%
+              </div>
+            </div>
+            <h6>Idiomas</h6>
+            <div class="progress">
+              <div
+                *ngFor="let habil of SkillI"
+                class="progress-bar"
+                [class]="habil.color"
+                role="progressbar"
+                [style.width]="habil.porcentaje + '%'"
+                [attr.aria-valuenow]="habil.porcentaje"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                {{ habil.habilidad }} {{ habil.porcentaje }}%
+              </div>
             </div>
           </div>
-          <h6>Idiomas</h6>
-          <div class="progress">
-            <div  *ngFor="let habil of SkillI"
-              class="progress-bar"
-              [class]="habil.color"
-              role="progressbar"
-              [style.width]="habil.porcentaje + '%'"
-              [attr.aria-valuenow]="habil.porcentaje"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              {{ habil.habilidad }} {{ habil.porcentaje }}%
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 text-white grad">
-          <h3>Hard Skills</h3>
-          <div class="progress" *ngFor="let habil of SkillH">
-            <div
-              class="progress-bar"
-              [class]="habil.color"
-              role="progressbar"
-              [style.width]="habil.porcentaje + '%'"
-              [attr.aria-valuenow]="habil.porcentaje"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              {{ habil.habilidad }} {{ habil.porcentaje }}%
+          <div class="col-12 col-lg-6 text-white grad">
+            <h3>Hard Skills</h3>
+            <div class="progress" *ngFor="let habil of SkillH">
+              <div
+                class="progress-bar"
+                [class]="habil.color"
+                role="progressbar"
+                [style.width]="habil.porcentaje + '%'"
+                [attr.aria-valuenow]="habil.porcentaje"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                {{ habil.habilidad }} {{ habil.porcentaje }}%
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div
-      class="col-12 col-lg-4 foto-quieta"
-      style="background-image: url(assets/gente.png)" >
-      <!--background foto Reunion-->
-      <i class="fa-solid fa-chart-bar icom-grande-izq"></i>
-    </div>
+      <div
+        class="col-12 col-lg-4 foto-quieta"
+        style="background-image: url(assets/gente.png)"
+      >
+        <!--background foto Reunion-->
+        <i class="fa-solid fa-chart-bar icom-grande-izq"></i>
+      </div>
 
-    <!--<div class="col-12 text-center">
+      <!--<div class="col-12 text-center">
                 <a href="#detalles"><i class="fa-solid fa-angles-down fa-bounce fa-2xl" style="color:black"></i></a>
             </div>-->
+    </div>
   </div>
-  <!--</div>-->
 </section>

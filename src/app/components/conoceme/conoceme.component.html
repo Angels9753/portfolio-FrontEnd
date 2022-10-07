@@ -1,28 +1,28 @@
 <section id="conoceme" class="sobre-mi">
-  <div class="row">
-    <div
-      class="col-4 foto-movi"
-      style="background-image: url(../../../assets/um.png)"
-    >
-      <!--background foto UniMoron-->
-      <i class="fa-solid fa-users icom-grande"></i>
-    </div>
-    <div class="col-8 grad">
-      <h1 class="display-5 text-dark">Conóceme</h1>
-      <div class="col">
-        <article class="card h-100">
-          <div class="card-body">
-            <p style="text-align: justify">
-                Mi Nombre es <strong>{{miPorfolio.datos[0].nombre}}.</strong>
+  <div class="container-fluid">
+    <div class="row">
+      <div
+        class="col-4 foto-movi"
+        style="background-image: url(../../../assets/um.png)"
+      >
+        <!--background foto UniMoron-->
+        <i class="fa-solid fa-users icom-grande"></i>
+      </div>
+      <div class="col-8 grad">
+        <h1 class="display-5 text-dark">Conóceme</h1>
+        <div class="col">
+          <article class="card h-100">
+            <div class="card-body">
+              <p style="text-align: justify">
+                Mi Nombre es <strong>{{ miPorfolio.datos[0].nombre }}.</strong>
               </p>
-            <p style="text-align: justify">
-              {{miPorfolio.datos[0].descripcion}}
-            </p>
-          </div>
-        </article>
+              <p style="text-align: justify">
+                {{ miPorfolio.datos[0].descripcion }}
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-

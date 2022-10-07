@@ -12,13 +12,15 @@
   
 }
 
+
+
 .sobre-mi {
-  padding-top: 0em;
+  /*padding-top: 0em;*/
   background: var(--main-bg-color);
 }
 
 .grad {
-  padding: 2em;
+  padding: 1rem 1rem;
   position: relative;
   background: -webkit-linear-gradient(
     bottom right,
@@ -59,13 +61,18 @@ h6 {
   background-size: 200%;
 }
 
-#logoAP{ width: 150px;
-  margin-left: 36px;
-  }
-  
   .container{
     display: flex;
     justify-content:space-between;
     align-items: center;   
     height: 60px;
+}
+
+/*
+ * Logo
+ */
+
+ #logo-header img {
+  width: 150px;
+  padding: 0.5em;
 }

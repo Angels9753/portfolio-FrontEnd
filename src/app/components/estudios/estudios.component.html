@@ -1,31 +1,38 @@
 <section id="estudios" class="sobre-mi">
-  <div class="row">
-    <div
-      class="col-4 foto-quieta"
-      style="background-image: url(../../../assets/aula.jpg)">
-      <!--background foto aula-->
-      <i class="fa fa-graduation-cap icom-grande"></i>
-    </div>
-    <div class="col-8 text-white grad">
-      <h1 class="display-5 text-dark">Estudios</h1>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col" *ngFor="let estudios of EstudiosList">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <img
-                  [src]="estudios.urllogo"
-                  class="rounded-circle border border-black border-3"
-                  alt="..."
-                />
-                <div>
-                  <h6>{{estudios.instituto}}</h6>
-                  <p>{{estudios.titulo}}</p>
-                  <div class="card-footer text-muted">{{estudios.desdehasta}}</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div
+        class="col-4 foto-quieta"
+        style="background-image: url(../../../assets/aula.jpg)"
+      >
+        <!--background foto aula-->
+        <i class="fa fa-graduation-cap icom-grande"></i>
+      </div>
+      <div class="col-8 text-white grad">
+        <h1 class="display-5 text-dark">Estudios</h1>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col" *ngFor="let estudios of EstudiosList">
+            <article class="card h-100">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img
+                    [src]="estudios.urllogo"
+                    class="rounded-circle border border-black border-3"
+                    alt="..."
+                  />
+                  <div>
+                    <h6>{{ estudios.instituto }}</h6>
+                    <p>{{ estudios.titulo }}</p>
+                    <div class="card-footer text-muted">
+                      {{ estudios.desdehasta }}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
