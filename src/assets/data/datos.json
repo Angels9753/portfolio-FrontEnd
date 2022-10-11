@@ -1,5 +1,5 @@
 {
-  "datos": [
+  "usuario": [
     {
       "nombre": "Angel Cay Sapienza",
       "subtitulo": "Desarrolador full Stack Jr.",
@@ -160,7 +160,7 @@
       "desdehasta": "1990-1992"
     },
     {
-      "icono": "fa fa-solid fa-computer",
+      "icono": "fa-solid fa-computer",
       "empresa": "Universidad Nacional de la Matanza",
       "cargo": "Director Centro de Cómputos",
       "descripcion": "Diseño y gerenciamiento de la gestión educativa de 15.000 alumnos y 1.000 docentes.",
