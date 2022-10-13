@@ -16,7 +16,7 @@ header a {
  */
 span {
   padding-left: 1em;
-  float: left;
+  float:inline-end;
 }
 nav {
   padding-left: 1em;
@@ -30,23 +30,21 @@ nav {
   font-size: 1.5rem;
 }
 
-.menues {
-  font-size: 1.5rem;
-}
+
 
 
 /*--------------------------------------------*/
-span ul {
+.menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-span ul li {
+.menu ul li {
   display: inline-block;
 }
 
-span ul li a {
+.menu ul li a {
   display: block;
   padding: 0.5rem;
   transition: all 0.4s linear;
@@ -54,11 +52,32 @@ span ul li a {
   color: black;
 }
 
-span ul li a:hover {
-  background: #b5e4fa;
+.menu  ul li a:hover {
+  background: #f36906;
+}/* #b5e4fa;*/
+/*-----------------------------------------------*/
+.redes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-nav ul {
+.redes ul li {
+  display: inline-block;
+}
+
+.redes ul li a {
+  display: block;
+  padding: 0.5rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  color: black;
+}
+
+.redes  ul li a:hover {
+  background: #f36906;
+}
+/*nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -79,28 +98,29 @@ nav ul li a {
 nav ul li a:hover {
   background: #b5e4fa;
 }
+*/
 /*
  * Icom 
  */
-.icon-menues ul li i {
+.tres-puntos i {
   display: none;
 }
 
 /***********************************************************
 /*Por debajo de 1100 px 
 */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 950px) {
   
   /*
   * Navegación
   */
 
 
-  span ul li a:hover{
+  .menu ul li a:hover{
     background: none;
   }
 
-  nav ul li a:hover{
+  .redes ul li a:hover{
     background: none;
   }
  .menu {
@@ -110,7 +130,7 @@ nav ul li a:hover {
   .menu ul li{
     display: none;
   }
-  .menu ul li.show{
+  .menu.show ul li{
     display: block;
   }
    
@@ -120,7 +140,7 @@ nav ul li a:hover {
   .redes {
     width: 100%;
     position: relative;
-    font-size: 28px;
+    font-size: 20px;
     color: black;
   }
 
@@ -129,14 +149,10 @@ nav ul li a:hover {
  
   }
 
-  .redes ul li {
-    display: block;
-  }
-
   /*
   *icon-Menues
   */
-  .icon-menues ul li i {
+  .tres-puntos i {
     display:block;
     padding: 1rem;
     position: relative;

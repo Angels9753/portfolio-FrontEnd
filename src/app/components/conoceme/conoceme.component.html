@@ -9,12 +9,16 @@
         <i class="fa-solid fa-users icom-grande"></i>
       </div>
       <div class="col-8 grad">
-        <h1 class="display-5 text-dark">Conóceme</h1>
+        <span class="d-flex justify-content-between align-items-center">
+          <h1 class="display-5 text-dark">Conóceme</h1>
+          <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
+        </span>
         <div class="col">
           <article class="card h-100">
             <div class="card-body">
               <p style="text-align: justify">
-                Mi Nombre es <strong>{{ miPorfolio.usuario[0].nombre }}.</strong>
+                Mi Nombre es
+                <strong>{{ miPorfolio.usuario[0].nombre }}.</strong>
               </p>
               <p style="text-align: justify">
                 {{ miPorfolio.usuario[0].descripcion }}
