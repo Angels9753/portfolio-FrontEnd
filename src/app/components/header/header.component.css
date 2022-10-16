@@ -1,43 +1,26 @@
-header {
+/*NUEVO*/
+
+.header {
   background: var(--main-bg-color);
-  display:flex;
+  height: 50px;
+}
+
+.logo-nav-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
-
-header a {
-  text-decoration: none;
-}
-
-
-/*
- * Navegación
- */
-span {
-  padding-left: 1em;
-  float:inline-end;
-}
-nav {
-  padding-left: 1em;
-  float: left;
-}
-.menu {
-  font-size: 0.8rem;
-}
-
-.redes {
-  font-size: 1.5rem;
-}
-
-
-
 
 /*--------------------------------------------*/
+.menu {
+  font-size: 0.8rem;
+ }
+
 .menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-right: 23px; 
 }
 
 .menu ul li {
@@ -46,59 +29,64 @@ nav {
 
 .menu ul li a {
   display: block;
-  padding: 0.5rem;
+  padding: 0.25rem;
   transition: all 0.4s linear;
   border-radius: 5px;
   color: black;
+  text-decoration: none; 
 }
 
-.menu  ul li a:hover {
+.menu ul li a:hover {
   background: #f36906;
-}/* #b5e4fa;*/
-/*-----------------------------------------------*/
+} 
+
+#login{
+  background: #f3d3069e;
+}
+
+.col {
+  padding-bottom: 2px;
+  background: var(--main-bg-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+/*--------------------*/
+.redes {
+  font-size: 1.5rem;
+}
+
 .redes ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-right: 8px; 
+
 }
 
 .redes ul li {
   display: inline-block;
+  
 }
 
 .redes ul li a {
   display: block;
-  padding: 0.5rem;
-  transition: all 0.4s linear;
-  border-radius: 5px;
-  color: black;
-}
-
-.redes  ul li a:hover {
-  background: #f36906;
-}
-/*nav ul {
-  margin: 0;
   padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  display: block;
-  padding: 0.5rem;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
   transition: all 0.4s linear;
   border-radius: 5px;
   color: black;
 }
 
-nav ul li a:hover {
-  background: #b5e4fa;
+.redes ul li a:hover {
+  background: #f36906;
+
 }
-*/
+
+
+
 /*
  * Icom 
  */
@@ -106,61 +94,74 @@ nav ul li a:hover {
   display: none;
 }
 
-/***********************************************************
-/*Por debajo de 1100 px 
+/***********************************
+/*Por debajo de 950 px 
 */
-@media screen and (max-width: 950px) {
-  
+@media screen and (max-width: 700px) {
   /*
   * Navegación
   */
 
-
-  .menu ul li a:hover{
-    background: none;
+  .menu {
+    margin-left: 1rem;
+    width: 30%;
+    padding: 1em;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    background: var(--main-bg-color-grad);
+    border-radius: 5px;
   }
 
-  .redes ul li a:hover{
-    background: none;
+  .menu ul  {
+    padding-right: 0;
   }
- .menu {
-    width: 100%;
-    margin-top: 1rem;
-  }
-  .menu ul li{
+  .menu ul li {
     display: none;
   }
-  .menu.show ul li{
+
+  .menu.show ul li {
     display: block;
   }
+  .menu ul li a {
+    text-align: center;
    
+  }
+  .menu ul li a:hover {
+    background: #f36906;
+    margin-left: 5px;
+  }
+
+  .col {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+  }
+
   /*
   * Redes
   */
+
   .redes {
-    width: 100%;
-    position: relative;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: black;
   }
 
   .redes a {
     color: black;
- 
+  }
+
+  .redes ul li a:hover {
+    background: none;
   }
 
   /*
   *icon-Menues
   */
   .tres-puntos i {
-    display:block;
-    padding: 1rem;
-    position: relative;
+    display: inline-block;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
     cursor:pointer;
-    font-size: 25px;
   }
-  
-  
 }
-
-

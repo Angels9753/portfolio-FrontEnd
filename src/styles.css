@@ -10,10 +10,7 @@
    --main-bg-color-grad: #025877;
    --icon-grande-color: red;
   */
-  
 }
-
-
 
 .sobre-mi {
   /*padding-top: 0em;*/
@@ -50,7 +47,6 @@
   background-color: var(--card-bg-color);
 }
 
-
 h6 {
   color: var(--card-titulo);
 }
@@ -62,18 +58,12 @@ h6 {
   background-size: 200%;
 }
 
-  .container{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;   
-    height: 60px;
-}
 
 /*
  * Logo
  */
 
- #logo-header img {
+#logo-header img {
   width: 150px;
   padding: 0.5em;
 }
