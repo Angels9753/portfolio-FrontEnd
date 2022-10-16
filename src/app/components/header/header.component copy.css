@@ -1,0 +1,142 @@
+header {
+  background: var(--main-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header a {
+  text-decoration: none;
+}
+
+/*
+ * Navegación
+ */
+span {
+  padding-left: 1em;
+  float:inline-end;
+}
+nav {
+  padding-left: 1em;
+  float: left;
+}
+
+.menu {
+  font-size: 0.8rem;
+}
+
+.redes {
+  font-size: 1.5rem;
+}
+
+/*--------------------------------------------*/
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 0.5rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  color: black;
+}
+
+.menu ul li a:hover {
+  background: #f36906;
+} /* #b5e4fa;*/
+/*-----------------------------------------------*/
+.redes ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.redes ul li {
+  display: inline-block;
+}
+
+.redes ul li a {
+  display: block;
+  padding: 0.5rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  color: black;
+}
+
+.redes ul li a:hover {
+  background: #f36906;
+}
+
+/*
+ * Icom 
+ */
+.tres-puntos i {
+  display: none;
+}
+
+/***********************************************************
+/*Por debajo de 950 px 
+*/
+@media screen and (max-width: 950px) {
+  /*
+  * Navegación
+  */
+  .navegacion {
+    width: 100%;
+  }
+
+  .menu ul li a:hover {
+    background: none;
+  }
+
+  .menu {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .menu ul li {
+    display: none;
+  }
+
+  .menu.show ul li {
+    display: block;
+  }
+
+  /*
+  * Redes
+  */
+
+  .redes {
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    color: black;
+  }
+
+  .redes a {
+    color: black;
+  }
+
+  .redes ul li a:hover {
+    background: none;
+  }
+
+  /*
+  *icon-Menues
+  */
+  .tres-puntos i {
+    display: block;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+  }
+}

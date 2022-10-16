@@ -1,7 +1,7 @@
 footer{
   background: var(--main-bg-color);
   font-size: small; 
-  
+}
 
 @media screen and (max-width: 860px) {
 
