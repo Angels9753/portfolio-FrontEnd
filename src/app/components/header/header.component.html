@@ -29,7 +29,8 @@
 </header>
 <div class="row">
   <div class="col d-flex align-items-center">
-    <nav class="menu" [ngClass]="{ 'show': seVe, '': !seVe }">
+    <nav class="menu" [ngClass]="{ show: seVe, '': !seVe }">
+      <hr />
       <ul>
         <li><a (click)="click3puntos()" href="#">Inicio</a></li>
         <li><a (click)="click3puntos()" href="#conoceme">Conóceme</a></li>
@@ -39,10 +40,11 @@
         <li><a (click)="click3puntos()" href="#proyectos">Proyectos</a></li>
         <li><a (click)="click3puntos()" href="#contacto">Contacto</a></li>
         <li>
-          <a (click)="clickEdit()" (click)="click3puntos()" id="login" href=""><strong>Login</strong></a>
+          <a (click)="clickEdit()" (click)="click3puntos()" id="login" href=""
+            ><strong>Login</strong></a
+          >
         </li>
       </ul>
     </nav>
   </div>
 </div>
-

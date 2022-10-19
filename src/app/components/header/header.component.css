@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+hr{
+   margin: 0;
+}
+
 /*--------------------------------------------*/
 .menu {
   font-size: 0.8rem;
