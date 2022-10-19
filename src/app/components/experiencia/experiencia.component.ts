@@ -18,4 +18,9 @@ export class ExperienciaComponent implements OnInit {
       this.ExperienciaList=data.experiencia;
     });
   }
+  seVeBoton: boolean = true;
+
+  clickEdit(): void {
+    this.seVeBoton = !this.seVeBoton;
+  }  
 }

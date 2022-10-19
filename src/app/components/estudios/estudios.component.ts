@@ -17,4 +17,9 @@ export class EstudiosComponent implements OnInit {
       this.EstudiosList=data.estudios;
     });
   }
+  seVeBoton: boolean = true;
+
+  clickEdit(): void {
+    this.seVeBoton = !this.seVeBoton;
+  }  
 }

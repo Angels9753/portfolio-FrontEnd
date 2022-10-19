@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -15,5 +16,10 @@ export class HeaderComponent implements OnInit {
   click3puntos(): void {
     this.seVe = !this.seVe;
   }
+  
+  seVeBoton: boolean = false;
 
+  clickEdit(): void {
+    this.seVeBoton = !this.seVeBoton;
+  }  
 }

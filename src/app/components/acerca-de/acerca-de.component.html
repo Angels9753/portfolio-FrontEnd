@@ -5,9 +5,14 @@
   <div class="container-banner">
     <div class="col-12 text-left">
       <div class="container-nombre">
-        <h1 class="display-5">{{ miPorfolio.usuario[0].nombre }}</h1>
+        <h1 class="display-5 ">{{ miPorfolio.usuario[0].nombre }}</h1>
+        <span class="edicion text-dark" [ngClass]="{ showBoton: seVeBoton, '': !seVeBoton }"
+          ><i class="lapiz fa-solid fa-pencil"></i>
+          <i class="tacho fa-solid fa-trash-can"></i>
+        </span>
         <h3>{{ miPorfolio.usuario[0].subtitulo }}</h3>
       </div>
+      <div></div>
     </div>
     <div class="col-12 text-center">
       <img

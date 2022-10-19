@@ -17,5 +17,9 @@ export class AcercaDeComponent implements OnInit {
       this.miPorfolio=data;
     });
   }
+  seVeBoton: boolean = true;
 
+  clickEdit(): void {
+    this.seVeBoton = !this.seVeBoton;
+  }  
 }

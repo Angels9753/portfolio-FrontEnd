@@ -9,8 +9,9 @@ import { PorfolioService } from './servicios/porfolio.service';
 export class AppComponent {
   title = 'portfolio-FrontEnd';
 
-  constructor(){
-    
-    
-  }
+  constructor(){ }
+
+ 
 }
+
+

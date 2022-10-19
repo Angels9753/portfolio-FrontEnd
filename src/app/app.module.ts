@@ -12,6 +12,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import{HttpClientModule} from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -24,14 +25,15 @@ import{HttpClientModule} from '@angular/common/http';
     EstudiosComponent,
     ExperienciaComponent,
     ProyectosComponent,
-    FooterComponent
-    
- 
+    FooterComponent,
+    LoginComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
+    
     ],
   providers: [],
   bootstrap: [AppComponent]

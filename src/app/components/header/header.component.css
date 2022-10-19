@@ -14,13 +14,13 @@
 /*--------------------------------------------*/
 .menu {
   font-size: 0.8rem;
- }
+}
 
 .menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-right: 23px; 
+  padding-right: 23px;
 }
 
 .menu ul li {
@@ -33,23 +33,21 @@
   transition: all 0.4s linear;
   border-radius: 5px;
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .menu ul li a:hover {
   background: #f36906;
-} 
+}
 
-#login{
+#login {
   background: #f3d3069e;
 }
 
 .col {
   padding-bottom: 2px;
   background: var(--main-bg-color);
-  display: flex;
   justify-content: end;
-  align-items: center;
 }
 
 /*--------------------*/
@@ -61,13 +59,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-right: 8px; 
-
+  padding-right: 8px;
 }
 
 .redes ul li {
   display: inline-block;
-  
 }
 
 .redes ul li a {
@@ -82,10 +78,7 @@
 
 .redes ul li a:hover {
   background: #f36906;
-
 }
-
-
 
 /*
  * Icom 
@@ -103,16 +96,16 @@
   */
 
   .menu {
-    margin-left: 1rem;
     width: 30%;
     padding: 1em;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin: 0.3rem 0 0.3rem 1rem;
+    /*<arr-aba> <iz-dr>
+  <arr> <der> <aba> <izq>*/
     background: var(--main-bg-color-grad);
     border-radius: 5px;
   }
 
-  .menu ul  {
+  .menu ul {
     padding-right: 0;
   }
   .menu ul li {
@@ -124,7 +117,6 @@
   }
   .menu ul li a {
     text-align: center;
-   
   }
   .menu ul li a:hover {
     background: #f36906;
@@ -132,9 +124,7 @@
   }
 
   .col {
-    display: flex;
-    justify-content:start;
-    align-items: center;
+    justify-content: start;
   }
 
   /*
@@ -156,12 +146,22 @@
 
   /*
   *icon-Menues
-  */
+ */
+
   .tres-puntos i {
     display: inline-block;
-    padding-left: 1rem;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    /*<arr-aba> <iz-dr>
+  <arr> <der> <aba> <izq>*/
     font-size: 1.5rem;
-    text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border-radius: 25px;
+    background: #f36906;
+  }
+
+  .tres-puntos i:hover {
+    background: #f1eeec;
   }
 }
