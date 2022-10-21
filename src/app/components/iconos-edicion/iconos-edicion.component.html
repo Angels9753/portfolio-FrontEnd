@@ -1,0 +1,14 @@
+<span
+  class="edicion text-dark"
+  [ngClass]="{
+    showBoton: miPorfolio.usuario[0].admin,
+    '': !miPorfolio.usuario[0].admin
+  }"
+  ><i class="lapiz fa-solid fa-pencil"></i>
+  <i class="tacho fa-solid fa-trash-can"></i>
+</span>
+
+
+<!--
+<app-iconos-edicion></app-iconos-edicion>
+-->

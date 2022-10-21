@@ -1,0 +1,28 @@
+
+  
+  
+  .edicion.showBoton .lapiz, 
+  .edicion.showBoton .tacho
+  {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border-radius: 25px;
+    background: #f36906;
+  }
+  
+  .edicion.showBoton .lapiz:hover,
+  .edicion.showBoton .tacho:hover
+  {
+    background: #f1eeec;}
+  
+.edicion.showBoton {
+  display: inline-block;
+}
+
+.edicion{
+    display: none;
+  }
+  

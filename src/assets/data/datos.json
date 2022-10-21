@@ -4,7 +4,10 @@
       "nombre": "Angel Cay Sapienza",
       "subtitulo": "Desarrolador full Stack Jr.",
       "urlfoto": "../../../assets/foto4x4.png",
-      "descripcion": "He desarrollado una amplia trayectoria en el campo de las TIC. Comencé mi carrera con trabajos Free Lance en varias instituciones relacionadas con la salud. Paralelamente llevé adelante mi tarea como docente secundario, terciario e universitario. Con el tiempo pude dirigir proyectos desde sus etapas primigenias, generando las bases sobre las cuales actualmente varias instituciones educativas basan sus sistemas de administración académica. Con el tiempo volví al desarrollo Free Lance y a la consultoría informática para numerosos comercios de la zona Oeste del AMBA. Actualmente estoy retirado de la actividad y actualizándome en las nuevas tecnologías."
+      "descripcion": "He desarrollado una amplia trayectoria en el campo de las TIC. Comencé mi carrera con trabajos Free Lance en varias instituciones relacionadas con la salud. Paralelamente llevé adelante mi tarea como docente secundario, terciario e universitario. Con el tiempo pude dirigir proyectos desde sus etapas primigenias, generando las bases sobre las cuales actualmente varias instituciones educativas basan sus sistemas de administración académica. Con el tiempo volví al desarrollo Free Lance y a la consultoría informática para numerosos comercios de la zona Oeste del AMBA. Actualmente estoy retirado de la actividad y actualizándome en las nuevas tecnologías.",
+      "usr": "angelsapi",
+      "password": "1234",
+      "admin": true
     }
   ],
   "skillSo": [
