@@ -23,9 +23,5 @@ export class SkillsComponent implements OnInit {
       this.SkillH=data.skillHa;
     });
   }
-  seVeBoton: boolean = true;
-
-  clickEdit(): void {
-    this.seVeBoton = !this.seVeBoton;
-  }  
+  
 }

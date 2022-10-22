@@ -2,19 +2,19 @@
   <div class="banner">
     <img class="banner" src="../assets/banner.jpg" alt="" />
   </div>
-  <div class="container-banner ">
-    <div class="col-12 text-left">
-      <div class="container-nombre">
-        <h1 class="display-5">{{ miPorfolio.usuario[0].nombre }}</h1>
+  <div class="container-banner" *ngFor="let usrs of miPorfolio">
+    <div class="col-12 text-left" >
+      <div class="container-nombre" >
+        <h1 class="display-5">{{ usrs.nombre }}</h1>
         <app-iconos-edicion></app-iconos-edicion>
-        <h3>{{ miPorfolio.usuario[0].subtitulo }}</h3>
+        <h3>{{ usrs.subtitulo }}</h3>
       </div>
       <div></div>
     </div>
     <div class="col-12 text-center">
       <img
         class="rounded-circle border border-white border-3"
-        [src]="miPorfolio.usuario[0].urlfoto"
+        [src]="usrs.urlfoto"
       />
     </div>
     <div class="col-12 text-center">

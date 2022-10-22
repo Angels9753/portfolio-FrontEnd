@@ -12,11 +12,8 @@ export class IconosEdicionComponent implements OnInit {
   constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
-
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      
-      this.miPorfolio=data;
-      console.log(data.usuario);
+       this.miPorfolio=data.usuario
     });
   }
 }

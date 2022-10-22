@@ -14,12 +14,8 @@ export class ConocemeComponent implements OnInit {
 
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
 
-      this.miPorfolio=data;
+      this.miPorfolio=data.usuario;
     });
   }
-  seVeBoton: boolean = true;
-
-  clickEdit(): void {
-    this.seVeBoton = !this.seVeBoton;
-  }  
+   
 }

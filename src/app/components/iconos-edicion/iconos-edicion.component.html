@@ -1,14 +1,18 @@
-<span
+<div *ngFor="let usrs of miPorfolio">
+<span 
   class="edicion text-dark"
   [ngClass]="{
-    showBoton: miPorfolio.usuario[0].admin,
-    '': !miPorfolio.usuario[0].admin
+    showBoton: usrs.admin,
+    '': !usrs.admin
   }"
   ><i class="lapiz fa-solid fa-pencil"></i>
   <i class="tacho fa-solid fa-trash-can"></i>
 </span>
-
+</div>
 
 <!--
 <app-iconos-edicion></app-iconos-edicion>
+
+showBoton: miPorfolio.usuario[0].admin,
+    '': !miPorfolio.usuario[0].admin
 -->

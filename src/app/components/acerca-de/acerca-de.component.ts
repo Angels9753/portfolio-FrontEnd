@@ -13,13 +13,8 @@ export class AcercaDeComponent implements OnInit {
   ngOnInit(): void {
 
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      
-      this.miPorfolio=data;
+            this.miPorfolio=data.usuario;
     });
   }
-  seVeBoton: boolean = true;
-
-  clickEdit(): void {
-    this.seVeBoton = !this.seVeBoton;
-  }  
+  
 }

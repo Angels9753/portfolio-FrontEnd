@@ -14,15 +14,15 @@
           <app-iconos-edicion></app-iconos-edicion>
           <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
         </span>
-        <div class="col">
+        <div class="col" *ngFor="let usrs of miPorfolio">
           <article class="card h-100">
             <div class="card-body">
               <p style="text-align: justify">
                 Mi Nombre es
-                <strong>{{ miPorfolio.usuario[0].nombre }}.</strong>
+                <strong>{{ usrs.nombre }}.</strong>
               </p>
               <p style="text-align: justify">
-                {{ miPorfolio.usuario[0].descripcion }}
+                {{ usrs.descripcion }}
               </p>
             </div>
           </article>

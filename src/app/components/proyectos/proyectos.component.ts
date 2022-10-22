@@ -17,9 +17,5 @@ export class ProyectosComponent implements OnInit {
       this.ProyectosList=data.proyectos;
     });
   }
-  seVeBoton: boolean = true;
-
-  clickEdit(): void {
-    this.seVeBoton = !this.seVeBoton;
-  }  
+   
 }
