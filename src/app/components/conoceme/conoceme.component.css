@@ -7,6 +7,7 @@
   background-size: 200%;
   animation: movimiento 10s infinite linear alternate;
 }
+
 @keyframes movimiento {
   from {
     background-position: bottom left;
@@ -16,6 +17,6 @@
   }
 }
 .sobre-mi {
-  padding-top: 10.3em;
+  padding-top: 8.3em;
    background: var(--main-bg-color);
 }

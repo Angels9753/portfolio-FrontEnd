@@ -1,5 +1,9 @@
 footer{
-  background: var(--main-bg-color);
+  /*background: var(--main-bg-color);*/
+  background: #ff9204;
+background: linear-gradient(180deg,#ff9204 0%, #ba7418 80%);
+background: -webkit-linear-gradient(180deg,#ff9204 0%, #ba7418 80%);
+background: -moz-linear-gradient(180deg,#ff9204 0%, #ba7418 80%);
   font-size: small; 
 }
 
@@ -8,10 +12,6 @@ footer{
 #logo-AP{
   text-align: center;
 }
-
-.mt-3{
-  /*margin-top:  12em; */
-  }
 
 .m-0{
     text-align: center;

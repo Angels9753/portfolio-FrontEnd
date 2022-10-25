@@ -1,7 +1,11 @@
 /*NUEVO*/
 
 .header {
-  background: var(--main-bg-color);
+  /*background: var(--main-bg-color);*/
+  background: #ff9204;
+background: linear-gradient(0deg,#ff9204 0%, #ba7418 80%);
+background: -webkit-linear-gradient(0deg,#ff9204 0%, #ba7418 80%);
+background: -moz-linear-gradient(0deg,#ff9204 0%, #ba7418 80%);
   height: 50px;
 }
 

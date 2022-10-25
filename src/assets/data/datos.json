@@ -3,7 +3,7 @@
     {
       "nombre": "Angel Cay Sapienza",
       "subtitulo": "Desarrolador full Stack Jr.",
-      "urlfoto": "../../../assets/foto4x4.png",
+      "urlfoto": "../../../assets/img/foto4x4.png",
       "descripcion": "He desarrollado una amplia trayectoria en el campo de las TIC. Comencé mi carrera con trabajos Free Lance en varias instituciones relacionadas con la salud. Paralelamente llevé adelante mi tarea como docente secundario, terciario e universitario. Con el tiempo pude dirigir proyectos desde sus etapas primigenias, generando las bases sobre las cuales actualmente varias instituciones educativas basan sus sistemas de administración académica. Con el tiempo volví al desarrollo Free Lance y a la consultoría informática para numerosos comercios de la zona Oeste del AMBA. Actualmente estoy retirado de la actividad y actualizándome en las nuevas tecnologías.",
       "usr": "angelsapi",
       "password": "1234",
@@ -102,25 +102,25 @@
   ],
   "estudios": [
     {
-      "urllogo": "../../../assets/logo-donbosco.jpg",
+      "urllogo": "../../../assets/img/logo-donbosco.jpg",
       "instituto": "Instituto Don Bosco de Ramos Mejía",
       "titulo": "Bachiller-Comercial",
       "desdehasta": "1969-1974"
     },
     {
-      "urllogo": "../../../assets/Logo-fcenuba.png",
+      "urllogo": "../../../assets/img/Logo-fcenuba.png",
       "instituto": "Facultad de Cs.Exactas - UBA",
       "titulo": "Licenciado en Química",
       "desdehasta": "1975-1980"
     },
     {
-      "urllogo": "../../../assets/logo-ntraSraNieves.png",
+      "urllogo": "../../../assets/img/logo-ntraSraNieves.png",
       "instituto": "Instituto Superior Ntra. Sra. de las Nieves",
       "titulo": "Profesor de Física y Química",
       "desdehasta": "1985-1988"
     },
     {
-      "urllogo": "../../../assets/logo-universidad-de-moron.jpg",
+      "urllogo": "../../../assets/img/logo-universidad-de-moron.jpg",
       "instituto": "Facultad de Informática - Univ. de Morón",
       "titulo": "Licenciado en Sistemas de Computación",
       "desdehasta": "1990-1995"
@@ -200,35 +200,35 @@
   ],
   "proyectos": [
     {
-      "urllogo": "../../../assets/logo-AOO.jpg",
+      "urllogo": "../../../assets/img/logo-AOO.jpg",
       "empresa": "Asociaciones Odontológicas",
       "subtitulo": "Zona Oeste y Partido de San Martín",
       "descripcion": "Networking y Software de control de Stock de materiales odontológicos y Liquidación de Obras Sociales.",
       "website": "https://aooeste.com.ar/"
     },
     {
-      "urllogo": "../../../assets/logo-donbosco.jpg",
+      "urllogo": "../../../assets/img/logo-donbosco.jpg",
       "empresa": "Institucion Salesiana",
       "subtitulo": "Obra Escolar Don Bosco de Ramos Mejía",
       "descripcion": "Networking y Software Contable, Administración Escolar y Liquidación de sueldos.",
       "website": "https://www.donboscoramos.edu.ar/"
     },
     {
-      "urllogo": "../../../assets/logo-Lasalle.jpg",
+      "urllogo": "../../../assets/img/logo-Lasalle.jpg",
       "empresa": "Institución de La Salle",
       "subtitulo": "Argentina-Paraguay",
       "descripcion": "Software de seguimiento psicopedagógico para alumnos de la institución.",
       "website": "http://lasalle.edu.ar/"
     },
     {
-      "urllogo": "../../../assets/logo-unlam.jpg",
+      "urllogo": "../../../assets/img/logo-unlam.jpg",
       "empresa": "Universidad Nacional de la Matanza",
       "subtitulo": "Secretaría de Informática y Comunicaciones",
       "descripcion": "Software on line de gestión académica, inscripción a cursadas y exámenes.",
       "website": "https://www.unlam.edu.ar/"
     },
     {
-      "urllogo": "../../../assets/logo-universidad-de-moron.jpg",
+      "urllogo": "../../../assets/img/logo-universidad-de-moron.jpg",
       "empresa": "Universidad de Morón",
       "subtitulo": "Facultad de Ingeniería Informática - Cátedra de Bases de Datos",
       "descripcion": "Primera página web de Cátedra de toda la Universidad. Para dar asistencia on line a los alumnos cursantes de la Materia Base de Datos.",
