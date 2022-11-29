@@ -1,9 +1,9 @@
-<div *ngFor="let usrs of miPorfolio">
+<div>
 <span 
   class="edicion text-dark"
   [ngClass]="{
-    showBoton: usrs.admin,
-    '': !usrs.admin
+    showBoton: persona.admin,
+    '': !persona.admin
   }"
   ><i class="lapiz fa-solid fa-pencil"></i>
   <i class="tacho fa-solid fa-trash-can"></i>
