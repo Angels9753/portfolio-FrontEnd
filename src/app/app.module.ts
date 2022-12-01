@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { IconosEdicionComponent } from './components/iconos-edicion/iconos-edicion.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { IconosEdicionComponent } from './components/iconos-edicion/iconos-edici
     ProyectosComponent,
     FooterComponent,
     LoginComponent,
-    IconosEdicionComponent
+    IconosEdicionComponent,
+    HomeComponent
   
   ],
   imports: [

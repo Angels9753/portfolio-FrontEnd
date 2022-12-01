@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   constructor(private datosPorfolio: PorfolioService) {}
 
   ngOnInit(): void {  }
-  
+  /*
   esAdmin: any;
   llamaClick(): void {
       
@@ -19,7 +19,8 @@ export class HeaderComponent implements OnInit {
     alert('data head comp llega:'+this.esAdmin);   
     
     };  
- 
+ */
+
   seVe: boolean = false;
   click3puntos(): void {
     this.seVe = !this.seVe;
