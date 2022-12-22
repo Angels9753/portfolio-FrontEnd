@@ -9,7 +9,7 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  persona:persona=new persona("","","","","","","",false);
+  persona:persona=new persona("","","","","");
 
   constructor(public personaService:PersonaService){}
   

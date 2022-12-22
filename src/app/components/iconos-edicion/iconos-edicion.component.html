@@ -1,15 +1,7 @@
 <div>
-  <span class="edicion text-dark" [ngClass]="{showBoton: persona.admin,'': !persona.admin}">
-
-  class="edicion text-dark showBoton" >
-  <i class="lapiz fa-solid fa-pencil"></i>
-  <i class="tacho fa-solid fa-trash-can"></i>
-</span>
+  <span class="edicion text-dark" [ngClass]="{showBoton: isLogged,'': !isLogged}">
+    <i class="lapiz fa-solid fa-pencil"></i>
+    <i class="tacho fa-solid fa-trash-can"></i>
+  </span>
 </div>
 
-<!--
-<app-iconos-edicion></app-iconos-edicion>
-
-showBoton: miPorfolio.usuario[0].admin,
-    '': !miPorfolio.usuario[0].admin
--->

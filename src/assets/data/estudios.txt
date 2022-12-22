@@ -1,0 +1,4 @@
+"../../../assets/img/logo-donbosco.jpg","Instituto Don Bosco de Ramos Mejía","Bachiller-Comercial","1969-1974"
+"../../../assets/img/Logo-fcenuba.png","Facultad de Cs.Exactas - UBA","Licenciado en Química","1975-1980"
+"../../../assets/img/logo-ntraSraNieves.png","Instituto Superior Ntra. Sra. de las Nieves","Profesor de Física y Química","1985-1988"
+"../../../assets/img/logo-universidad-de-moron.jpg","Facultad de Informática - Univ. de Morón","Licenciado en Sistemas de Computación","1990-1995"

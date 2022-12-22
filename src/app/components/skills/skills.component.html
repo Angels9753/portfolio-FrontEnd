@@ -1,5 +1,5 @@
 <section id="skills" class="sobre-mi">
-  <div class="container-fluid ">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-lg-8 text-white grad">
         <span class="d-flex justify-content-between align-items-center">
@@ -10,48 +10,47 @@
         <div class="row">
           <div class="col-12 col-lg-6 grad">
             <h3>Soft Skills</h3>
-            <div class="progress" *ngFor="let habil of SkillS">
+            <div class="progress" *ngFor="let soft of skib">
               <div
                 class="progress-bar"
-                [class]="habil.color"
+                [class]="soft.color"
                 role="progressbar"
-                [style.width]="habil.porcentaje + '%'"
-                [attr.aria-valuenow]="habil.porcentaje"
+                [style.width]="soft.porcentaje + '%'"
+                [attr.aria-valuenow]="soft.porcentaje"
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                {{ habil.habilidad }} {{ habil.porcentaje }}%
+                {{ soft.nombre }} {{ soft.porcentaje }}%
               </div>
             </div>
             <h6>Idiomas</h6>
             <div class="progress">
               <div
-                *ngFor="let habil of SkillI"
+                *ngFor="let idioma of skii"
                 class="progress-bar"
-                [class]="habil.color"
+                [class]="idioma.color"
                 role="progressbar"
-                [style.width]="habil.porcentaje + '%'"
-                [attr.aria-valuenow]="habil.porcentaje"
+                [style.width]="idioma.porcentaje + '%'"
+                [attr.aria-valuenow]="idioma.porcentaje"
                 aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                {{ habil.habilidad }} {{ habil.porcentaje }}%
+                aria-valuemax="100">
+                {{ idioma.nombre }} {{ idioma.porcentaje }}%
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-6 text-white grad">
             <h3>Hard Skills</h3>
-            <div class="progress" *ngFor="let habil of SkillH">
+            <div class="progress" *ngFor="let hard of skid">
               <div
                 class="progress-bar"
-                [class]="habil.color"
+                [class]="hard.color"
                 role="progressbar"
-                [style.width]="habil.porcentaje + '%'"
-                [attr.aria-valuenow]="habil.porcentaje"
+                [style.width]="hard.porcentaje + '%'"
+                [attr.aria-valuenow]="hard.porcentaje"
                 aria-valuemin="0"
                 aria-valuemax="100"
               >
-                {{ habil.habilidad }} {{ habil.porcentaje }}%
+                {{ hard.nombre }} {{ hard.porcentaje }}%
               </div>
             </div>
           </div>
@@ -60,7 +59,8 @@
 
       <div
         class="col-12 col-lg-4 foto-quieta"
-        style="background-image: url(../assets/img/gente.png)">
+        style="background-image: url(../assets/img/gente.png)"
+      >
         <!--background foto Reunion-->
         <i class="fa-solid fa-chart-bar icom-grande-izq"></i>
       </div>

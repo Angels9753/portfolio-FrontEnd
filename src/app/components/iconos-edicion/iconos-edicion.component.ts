@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from 'src/app/model/persona.model';
-import { PersonaService } from 'src/app/servicios/persona.service';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
   selector: 'app-iconos-edicion',
@@ -10,39 +8,15 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
 })
 
 export class IconosEdicionComponent implements OnInit {
-  persona:persona=new persona("","","","","","","",false);
-
-  constructor(public personaService:PersonaService){}
-  
-  
+  isLogged = false;
+  constructor(private tokenService: TokenService) {}
 
   ngOnInit(): void {
-
-    this.personaService.getPersona().subscribe(data=>{this.persona=data})
-    };
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  /*
-  miPorfolio:any;
-  constructor(private datosPorfolio:PorfolioService) { }
-
-  ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-       this.miPorfolio=data.usuario
-    });
-  }
 }
-*/
-

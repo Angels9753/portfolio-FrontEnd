@@ -4,28 +4,21 @@ export class persona {
   apellido: String;
   img: String;
   subtitulo: String;
-  descripcion: String;
-  usr: String;
-  password: String;
-  admin: boolean;
+  descripcion: String
+
 
   constructor(
     nombre: String,
     apellido: String,
     img: String,
     subtitulo: String,
-    descripcion: String,
-    usr: String,
-    password: String,
-    admin: boolean
+    descripcion: String
+
   ) {
     this.nombre = nombre;
     this.apellido = apellido;
     this.img = img;
     this.subtitulo = subtitulo;
-    this.descripcion = descripcion;
-    this.usr = usr;
-    this.password = password;
-    this.admin = admin;
+    this.descripcion = descripcion
   }
 }

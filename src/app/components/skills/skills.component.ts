@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { SkillBlanda } from 'src/app/model/skill-blanda';
+import { SkillDura } from 'src/app/model/skill-dura';
+import { SkillIdioma } from 'src/app/model/skill-idioma';
+import { SSkillBlandaService } from 'src/app/servicios/s-skill-blanda.service';
+import { SSkillDuraService } from 'src/app/servicios/s-skill-dura.service';
+import { SSkillIdiomaService } from 'src/app/servicios/s-skill-idioma.service';
+import { TokenService } from 'src/app/servicios/token.service';
 
 
 @Component({
@@ -8,20 +14,72 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  SkillS:any;
-  SkillI:any;
-  SkillH:any;
+  skib : SkillBlanda[]=[];
+  skid : SkillDura[]=[];
+  skii : SkillIdioma[]=[];
 
-  constructor(private datosPorfolio:PorfolioService) { }
+  constructor(private sSkillBlanda: SSkillBlandaService,private sSkillDura: SSkillDuraService, private sSkillIdioma: SSkillIdiomaService, private tokenService: TokenService) { }
+
+  isLogged = false;
   
   ngOnInit(): void {
+    this.cargarSkillBlanda();
+    this.cargarSkillDura();
+    this.cargarSkillIdioma();
 
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-     
-      this.SkillS=data.skillSo;
-      this.SkillI=data.skillId;
-      this.SkillH=data.skillHa;
-    });
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    } else {
+      this.isLogged=false;
+    }
+}
+cargarSkillBlanda():void{
+  this.sSkillBlanda.list().subscribe(data=> {this.skib =data;}
+  )
+}
+cargarSkillDura():void{
+  this.sSkillDura.list().subscribe(data=> {this.skid =data;}
+  )
+}
+cargarSkillIdioma():void{
+  this.sSkillIdioma.list().subscribe(data=> {this.skii =data;}
+  )
+}
+
+deleteSkillBlanda(id?: number){
+  if(id != undefined){
+    this.sSkillBlanda.delete(id).subscribe(
+      data => {
+        this.cargarSkillBlanda();
+      }, err => {
+        alert("No se pudo borrar la SkillBlanda");
+      }
+    )
   }
-  
+}
+
+deleteSkillDura(id?: number){
+  if(id != undefined){
+    this.sSkillDura.delete(id).subscribe(
+      data => {
+        this.cargarSkillDura();
+      }, err => {
+        alert("No se pudo borrar la SkillDura");
+      }
+    )
+  }
+}
+deleteSkillIdioma(id?: number){
+  if(id != undefined){
+    this.sSkillIdioma.delete(id).subscribe(
+      data => {
+        this.cargarSkillIdioma();
+      }, err => {
+        alert("No se pudo borrar la SkillIdioma");
+      }
+    )
+  }
+}
+
+
 }

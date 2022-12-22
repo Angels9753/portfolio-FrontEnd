@@ -1,0 +1,6 @@
+"HTML","35","bg-danger"
+"CSS","30","bg-custom"
+"JS","25","text-dark bg-warning"
+"Networking","80","bg-dark"
+"SQL","90","bg-secondary"
+"VB.Net","80","bg-succes"

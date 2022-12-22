@@ -8,19 +8,19 @@
         <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
       </span>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col" *ngFor="let experiencia of ExperienciaList">
+        <div class="col" *ngFor="let Experiencia of expe">
           <article class="card h-100">
             <div class="card-body">
               <div class="d-flex">
                 <i 
-                [class]="experiencia.icono"
+                [class]="Experiencia.iconoEx"
                 class="pt-3 fa-2xl"></i>
                 <div class="ps-3">
-                  <h6>{{ experiencia.empresa }}</h6>
-                  <p>{{ experiencia.cargo }}</p>
-                  <p class="small fw-light">{{ experiencia.descripcion }}</p>
+                  <h6>{{ Experiencia.institucionEx }}</h6>
+                  <p>{{ Experiencia.cargoEx }}</p>
+                  <p class="small fw-light">{{ Experiencia.descripcionEx }}</p>
                   <div class="card-footer text-muted">
-                    {{ experiencia.desdehasta }}
+                    {{ Experiencia.desdeHastaEx }}
                   </div>
                 </div>
               </div>
