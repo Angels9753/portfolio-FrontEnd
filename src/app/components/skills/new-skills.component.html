@@ -1,0 +1,92 @@
+<body>
+    <section class="vh-100 gradient-custom">
+      <app-logo-ap></app-logo-ap>
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-11">
+            <div class="card bg-dark text-white" style="border-radius: 1rem">
+              <div class="card-body p-5 text-center">
+                <div>
+                  <h2 class="fw-bold mb-2 text-uppercase">Nueva Habilidad</h2>
+                  <p class="text-white-50 mb-5">
+                    Por favor, ingresar la información adecuada.
+                  </p>
+                  <form
+                    class="form-floating"
+                    (ngSubmit)="onCreate()"
+                    novalidate
+                    #f="ngForm">
+                    <div class="form-floating">
+                        <select
+                          class="form-select"
+                          id="dropdownOptionTipo"
+                          name="dropdownOptionTipo"
+                          [(ngModel)]="ngDropdownTipo"
+                        >
+                          <!--<option selected>Abra el menú de selección</option>-->
+                          <option value="1">Habilidad Blanda</option>
+                          <option value="2">Habilidad Dura</option>
+                          <option value="3">Habilidad Idioma</option>
+                        </select>
+                        <label for="ngDropdownTipo">Seleccione el tipo de Habilidad</label>
+                      </div>
+                      <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        name="nombre"
+                        [(ngModel)]="nombre"
+                        required
+                      />
+                      <label for="nombre">Habilidad</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="porcentaje"
+                        name="porcentaje"
+                        [(ngModel)]="porcentaje"
+                        required
+                      />
+                      <label for="porcentaje">Nivel de Conocimiento (%)</label>
+                    </div>
+                    <br />
+
+                    <div class="form-floating">
+                      <select
+                        class="form-select"
+                        id="dropdownOption"
+                        name="dropdownOption"
+                        [(ngModel)]="ngDropdown"
+                      >
+                        <!--<option selected>Abra el menú de selección</option>-->
+                        <option value="bg-primary">
+                          Azul 
+                        </option>
+                        <option value="bg-secondary">Gris</option>
+                        <option value="bg-success">Verde</option>
+                        <option value="bg-danger">Rojo</option>
+                        <option value="text-dark bg-warning">Amarillo</option>
+                         <option value="bg-dark">Negro</option>
+                        <option value="bg-Secondary">Gris</option>
+                        <option value="bg-Info">AguaMarina</option>
+                      </select>
+                      <label for="ngDropdown">Seleccione el color de la barra de progreso</label>
+                    </div>
+                    <br />
+                    <button class="btn btn-primary">Agregar habilidad</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <app-footer></app-footer>
+  </body>
+  

@@ -8,10 +8,17 @@
         <!--background foto aula-->
         <i class="fa fa-graduation-cap icom-grande"></i>
       </div>
-      <div class="col-8  grad">
+      <div class="col-8 grad">
         <span class="d-flex justify-content-between align-items-center">
           <h1 class="display-5 text-dark flex-grow-1">Estudios</h1>
-          <app-iconos-edicion></app-iconos-edicion>         
+          <div
+            class="edicion"
+            [ngClass]="{ showBoton: isLogged, noShow: !isLogged }"
+          >
+            <span class="d-flex justify-content-end edicion text-dark">
+                <i class="edicion nuevo fa-solid fa-file-circle-plus" routerLink="/nuevoest"></i>
+            </span>
+          </div>
           <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
         </span>
         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -32,6 +39,15 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div
+                class="edicion"
+                [ngClass]="{ showBoton: isLogged, noShow: !isLogged }"
+              >
+                <span class="d-flex justify-content-end edicion text-dark">
+                  <i class="lapiz fa-solid fa-pencil fa-xs" routerLink="/editexp/{{estudios.id}}"></i>
+                  <i class="tacho fa-solid fa-trash-can fa-xs" (click)="delete(estudios.id)"></i>
+                </span>
               </div>
             </article>
           </div>

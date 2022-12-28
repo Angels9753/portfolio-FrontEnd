@@ -32,7 +32,6 @@ export class HeaderComponent implements OnInit {
 
   login(){
     this.seVe = !this.seVe;
-    //this.router.navigate(['/login'])
-  }
+    }
 
 }

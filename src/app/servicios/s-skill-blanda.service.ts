@@ -12,22 +12,22 @@ export class SSkillBlandaService {
   constructor(private httpClient: HttpClient) { }
 
   public list():Observable<SkillBlanda[]>{
-    return this.httpClient.get<SkillBlanda[]>(this.expURL + 'lista');
+    return this.httpClient.get<SkillBlanda[]>(`${this.expURL}lista`);
   }
 
   public detail(id:number): Observable<SkillBlanda>{
-    return this.httpClient.get<SkillBlanda>(this.expURL + 'detail/$(id)')
+    return this.httpClient.get<SkillBlanda>(`${this.expURL}detail/${id}`)
   }
 
   public save(SkillBlanda: SkillBlanda): Observable<any>{
-    return this.httpClient.post<any>(this.expURL + 'create', SkillBlanda)
+    return this.httpClient.post<any>(`${this.expURL}create`, SkillBlanda)
   }
 
   public update(id:number, SkillBlanda:SkillBlanda):Observable<any>{
-    return this.httpClient.put<any>(this.expURL + 'update/${id}',SkillBlanda)
+    return this.httpClient.put<any>(`${this.expURL}update/${id}`,SkillBlanda)
   }
 
   public delete(id:number):Observable<any>{
-    return this.httpClient.delete<any>(this.expURL + 'delete/${id}')
+    return this.httpClient.delete<any>(`${this.expURL}delete/${id}`)
   }
 }

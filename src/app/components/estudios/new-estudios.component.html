@@ -1,0 +1,80 @@
+<body>
+    <section class="vh-100 gradient-custom">
+      <app-logo-ap></app-logo-ap>
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-11">
+            <div class="card bg-dark text-white" style="border-radius: 1rem">
+              <div class="card-body p-5 text-center">
+                <div >
+                  <h2 class="fw-bold mb-2 text-uppercase">Nuevo Estudio</h2>
+                  <p class="text-white-50 mb-5">
+                    Por favor, ingresar la información adecuada.
+                  </p>
+                  <form
+                    class="form-floating"
+                    (ngSubmit)="onCreate()"
+                    novalidate
+                    #f="ngForm"
+                  >
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="institucionEs"
+                        name="institucionEs"
+                        [(ngModel)]="institucionEs"
+                        required
+                      />
+                      <label for="institucionEs">Institución Educativa</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="tituloEs"
+                        name="tituloEs"
+                        [(ngModel)]="tituloEs"
+                        required
+                      />
+                      <label for="tituloEs">Título obtenido</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="desdeHastaEs"
+                        name="desdeHastaEs"
+                        [(ngModel)]="desdeHastaEs"
+                        required
+                      />
+                      <label for="desdeHastaEs">Período de estudio</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="urlLogoEs"
+                        name="urlLogoEs"
+                        [(ngModel)]="urlLogoEs"
+                        required
+                      />
+                      <label for="urlLogoEs">URL del Logo de la Institución</label>
+                    </div>
+                    
+                    <br />
+                    <button class="btn btn-primary">Agregar experiencia</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <app-footer></app-footer>
+  </body>
+  

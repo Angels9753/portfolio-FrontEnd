@@ -7,11 +7,44 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  url="http://localhost:8080/personas/"
+  expURL="http://localhost:8080/personas/"
 
-  constructor(private http:HttpClient) { }
+  constructor(private httpClient:HttpClient) { }
 
-  public getPersona():Observable<persona>{
-    return this.http.get<persona>(this.url+"traer/perfil")
+  
+  public list():Observable<persona[]>{
+    return this.httpClient.get<persona[]>(`${this.expURL}lista`);
   }
+
+  public detail(id:number): Observable<persona>{
+    return this.httpClient.get<persona>(`${this.expURL}detail/${id}`)
+  }
+/*
+  public save(persona: persona): Observable<any>{
+    return this.httpClient.post<any>(`${this.expURL}create`, persona)
+  }
+*/
+  public update(id:number, pers:persona):Observable<any>{
+    return this.httpClient.put<any>(`${this.expURL}update/${id}`,pers)
+  }
+/*
+  public delete(id:number):Observable<any>{
+    return this.httpClient.delete<any>(`${this.expURL}delete/${id}`)
+  }
+
+*/
+
+
+
+
+
+/*
+  public getPersona():Observable<persona>{
+    return this.httpClient.get<persona>(this.expURL+"traer/perfil")
+  }
+
+  public update(id:number, pers:persona):Observable<any>{
+    return this.httpClient.put<any>(`${this.expURL}editar/${id}`,pers)
+  */
 }
+

@@ -12,22 +12,22 @@ export class SEstudioService {
   constructor(private httpClient: HttpClient) { }
 
   public list():Observable<Estudio[]>{
-    return this.httpClient.get<Estudio[]>(this.expURL + 'lista');
+    return this.httpClient.get<Estudio[]>(`${this.expURL}lista`);
   }
 
   public detail(id:number): Observable<Estudio>{
-    return this.httpClient.get<Estudio>(this.expURL + 'detail/$(id)')
+    return this.httpClient.get<Estudio>(`${this.expURL}detail/${id}`)
   }
 
   public save(Estudio: Estudio): Observable<any>{
-    return this.httpClient.post<any>(this.expURL + 'create', Estudio)
+    return this.httpClient.post<any>(`${this.expURL}create`, Estudio)
   }
 
   public update(id:number, Estudio:Estudio):Observable<any>{
-    return this.httpClient.put<any>(this.expURL + 'update/${id}',Estudio)
+    return this.httpClient.put<any>(`${this.expURL}update/${id}`,Estudio)
   }
 
   public delete(id:number):Observable<any>{
-    return this.httpClient.delete<any>(this.expURL + 'delete/${id}')
+    return this.httpClient.delete<any>(`${this.expURL}delete/${id}`)
   }
 }

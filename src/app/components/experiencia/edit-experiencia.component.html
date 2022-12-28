@@ -1,0 +1,103 @@
+<body >
+    <section class="vh-100 gradient-custom" >
+      <app-logo-ap></app-logo-ap>
+      <div class="container py-5 h-100"  *ngIf="expLab" >
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-11">
+            <div class="card bg-dark text-white" style="border-radius: 1rem">
+              <div class="card-body p-5 text-center">
+                <div >
+                  <h2 class="fw-bold mb-2 text-uppercase">Editar Experiencia</h2>
+                  <p class="text-white-50 mb-5">
+                    Por favor, ingresar la información adecuada.
+                  </p>
+                  <form
+                    class="form-floating"
+                    (ngSubmit)="onUpdate()"
+                    novalidate
+                    #f="ngForm"
+                  >
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="institucionEx"
+                        name="institucionEx"
+                        [(ngModel)]="expLab.institucionEx"
+                        required
+                      />
+                      <label for="institucionEx">Nombre de la empresa</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cargoEx"
+                        name="cargoEx"
+                        [(ngModel)]="expLab.cargoEx"
+                        required
+                      />
+                      <label for="cargoEx">Posición en la Empresa</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="descripcionEx"
+                        name="descripcionEx"
+                        [(ngModel)]="expLab.descripcionEx"
+                        required
+                      />
+                      <label for="descripcionEx">Descripcion de la tarea</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="desdeHastaEx"
+                        name="desdeHastaEx"
+                        [(ngModel)]="expLab.desdeHastaEx"
+                        required
+                      />
+                      <label for="desdeHastaEx">Período (AAAA-AAAA)</label>
+                    </div>
+                    <!--
+                    <br />
+                    <div class="form-floating">
+                      <select
+                        class="form-select"
+                        id="dropdownOption"
+                        name="dropdownOption"
+                        [(ngModel)]="ngDropdown"
+                      >
+                       
+                        <option value="fa fa-briefcase">
+                          Gerenciamiento Administrativo
+                        </option>
+                        <option value="fa-solid fa-computer">Informática</option>
+                        <option value="fa-solid fa-tower-cell">
+                          Comunicaciones
+                        </option>
+                        <option value="fa-solid fa-radio">Electrónica</option>
+                        <option value="fa-solid fa-gear">Industria</option>
+                        <option value="fa fa-graduation-cap">Educación</option>
+                      </select>
+                      <label for="ngDropdown">Seleccione el Icono adecuado</label>
+                    </div>
+                -->
+                    <br />
+                    <button class="btn btn-primary">Actualizar experiencia</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <app-footer></app-footer>
+  </body>
+  

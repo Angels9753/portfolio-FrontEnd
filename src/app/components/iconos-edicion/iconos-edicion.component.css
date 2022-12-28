@@ -1,6 +1,6 @@
 
   
-  
+  .edicion.showBoton .nuevo,
   .edicion.showBoton .lapiz, 
   .edicion.showBoton .tacho
   {
@@ -13,6 +13,7 @@
     background: #f36906;
   }
   
+  .edicion.showBoton .nuevo:hover,
   .edicion.showBoton .lapiz:hover,
   .edicion.showBoton .tacho:hover
   {

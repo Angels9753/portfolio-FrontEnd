@@ -4,54 +4,105 @@
       <div class="col-12 col-lg-8 text-white grad">
         <span class="d-flex justify-content-between align-items-center">
           <h1 class="display-5 text-dark flex-grow-1">Habilidades</h1>
-          <app-iconos-edicion></app-iconos-edicion>
+          <div
+            class="edicion"
+            [ngClass]="{ showBoton: isLogged, noShow: !isLogged }"
+          >
+            <span class="d-flex justify-content-end edicion text-dark">
+              <i
+                class="edicion nuevo fa-solid fa-file-circle-plus"
+                routerLink="/nuevaskl"
+              ></i>
+            </span>
+          </div>
           <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
         </span>
         <div class="row">
           <div class="col-12 col-lg-6 grad">
             <h3>Soft Skills</h3>
-            <div class="progress" *ngFor="let soft of skib">
-              <div
-                class="progress-bar"
-                [class]="soft.color"
-                role="progressbar"
-                [style.width]="soft.porcentaje + '%'"
-                [attr.aria-valuenow]="soft.porcentaje"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                {{ soft.nombre }} {{ soft.porcentaje }}%
-              </div>
+
+            <div *ngFor="let soft of skib">
+              <span class="d-flex">
+                <div class="progress flex-grow-1">
+                  <div
+                    class="progress-bar"
+                    [class]="soft.color"
+                    role="progressbar"
+                    [style.width]="soft.porcentaje + '%'"
+                    [attr.aria-valuenow]="soft.porcentaje"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    {{ soft.nombre }} {{ soft.porcentaje }}%
+                  </div>
+                </div>
+                <div
+                  class="edicion"
+                  [ngClass]="{ showBoton: isLogged, noShow: !isLogged }"
+                >
+                  <i
+                    class="p-2 tacho text-dark fa-solid fa-trash-can fa-xs" (click)="deleteSkillBlanda(soft.id)"
+                  ></i>
+                </div>
+              </span>
             </div>
+
             <h6>Idiomas</h6>
-            <div class="progress">
-              <div
-                *ngFor="let idioma of skii"
-                class="progress-bar"
-                [class]="idioma.color"
-                role="progressbar"
-                [style.width]="idioma.porcentaje + '%'"
-                [attr.aria-valuenow]="idioma.porcentaje"
-                aria-valuemin="0"
-                aria-valuemax="100">
-                {{ idioma.nombre }} {{ idioma.porcentaje }}%
-              </div>
+
+            <div *ngFor="let idioma of skii">
+              <span class="d-flex">
+                <div class="progress flex-grow-1">
+                  <div
+                    class="progress-bar"
+                    [class]="idioma.color"
+                    role="progressbar"
+                    [style.width]="idioma.porcentaje + '%'"
+                    [attr.aria-valuenow]="idioma.porcentaje"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    {{ idioma.nombre }} {{ idioma.porcentaje }}%
+                  </div>
+                </div>
+                <div
+                  class="edicion"
+                  [ngClass]="{ showBoton: isLogged, noShow: !isLogged }"
+                >
+                  <i
+                  class="p-2 tacho text-dark fa-solid fa-trash-can fa-xs" (click)="deleteSkillIdioma(idioma.id)"
+                      ></i>
+                </div>
+              </span>
             </div>
           </div>
+
           <div class="col-12 col-lg-6 text-white grad">
             <h3>Hard Skills</h3>
-            <div class="progress" *ngFor="let hard of skid">
-              <div
-                class="progress-bar"
-                [class]="hard.color"
-                role="progressbar"
-                [style.width]="hard.porcentaje + '%'"
-                [attr.aria-valuenow]="hard.porcentaje"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                {{ hard.nombre }} {{ hard.porcentaje }}%
-              </div>
+            <div *ngFor="let hard of skid">
+              <span class="d-flex">
+                <div class="progress flex-grow-1">
+                  <div
+                    class="progress-bar"
+                    [class]="hard.color"
+                    role="progressbar"
+                    [style.width]="hard.porcentaje + '%'"
+                    [attr.aria-valuenow]="hard.porcentaje"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    {{ hard.nombre }} {{ hard.porcentaje }}%
+                  </div>
+                </div>
+                <div
+                  class="edicion"
+                  [ngClass]="{ showBoton: isLogged, noShow: !isLogged }"
+                >
+                  <i
+                  class="p-2 tacho text-dark fa-solid fa-trash-can fa-xs" (click)="deleteSkillDura(hard.id)"
+
+                  ></i>
+                </div>
+              </span>
             </div>
           </div>
         </div>
@@ -64,10 +115,6 @@
         <!--background foto Reunion-->
         <i class="fa-solid fa-chart-bar icom-grande-izq"></i>
       </div>
-
-      <!--<div class="col-12 text-center">
-                <a href="#detalles"><i class="fa-solid fa-angles-down fa-bounce fa-2xl" style="color:black"></i></a>
-            </div>-->
     </div>
   </div>
 </section>

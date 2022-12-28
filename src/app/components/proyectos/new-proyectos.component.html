@@ -1,0 +1,92 @@
+<body>
+    <section class="vh-100 gradient-custom">
+      <app-logo-ap></app-logo-ap>
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-11">
+            <div class="card bg-dark text-white" style="border-radius: 1rem">
+              <div class="card-body p-5 text-center">
+                <div >
+                  <h2 class="fw-bold mb-2 text-uppercase">Nuevo Proyecto</h2>
+                  <p class="text-white-50 mb-5">
+                    Por favor, ingresar la información adecuada.
+                  </p>
+                  <form
+                    class="form-floating"
+                    (ngSubmit)="onCreate()"
+                    novalidate
+                    #f="ngForm"
+                  >
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="institucionPr"
+                        name="institucionPr"
+                        [(ngModel)]="institucionPr"
+                        required
+                      />
+                      <label for="institucionPr">Institución</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subtituloPr"
+                        name="subtituloPr"
+                        [(ngModel)]="subtituloPr"
+                        required
+                      />
+                      <label for="subtituloPr">Detalles de la Empresa</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="descripcionPr"
+                          name="descripcionPr"
+                          [(ngModel)]="descripcionPr"
+                          required
+                        />
+                        <label for="descripcionPr">Detalles del Proyecto</label>
+                      </div>
+                      <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="webPr"
+                        name="webPr"
+                        [(ngModel)]="webPr"
+                        required
+                      />
+                      <label for="webPr">Página Web del Proyecto</label>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="urlLogoPr"
+                        name="urlLogoPr"
+                        [(ngModel)]="urlLogoPr"
+                        required
+                      />
+                      <label for="urlLogoPr">URL del Logo de la Institución</label>
+                    </div>
+                    
+                    <br />
+                    <button class="btn btn-primary">Agregar experiencia</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <app-footer></app-footer>
+  </body>
+  

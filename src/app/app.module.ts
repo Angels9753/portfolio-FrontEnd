@@ -15,7 +15,16 @@ import { LoginComponent } from './components/login/login.component';
 import { IconosEdicionComponent } from './components/iconos-edicion/iconos-edicion.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { interceptorProvider } from './servicios/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { LogoAPComponent } from './components/header/logo-ap.component';
+import { NewEstudiosComponent } from './components/estudios/new-estudios.component';
+import { NewProyectosComponent } from './components/proyectos/new-proyectos.component';
+import { NewSkillsComponent } from './components/skills/new-skills.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
+import { EditEstudiosComponent } from './components/estudios/edit-estudios.component';
+import { EditConocemeComponent } from './components/conoceme/edit-conoceme.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +39,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     LoginComponent,
     IconosEdicionComponent,
-    HomeComponent
+    HomeComponent,
+    NewExperienciaComponent,
+    LogoAPComponent,
+    NewEstudiosComponent,
+    NewProyectosComponent,
+    NewSkillsComponent,
+    EditExperienciaComponent,
+    EditProyectosComponent,
+    EditEstudiosComponent,
+    EditConocemeComponent,
     
   
   ],
@@ -42,7 +60,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule
     
     ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

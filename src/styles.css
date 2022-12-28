@@ -73,3 +73,47 @@ h1,.edicion.showBoton
     display: inline-block;
   } 
  
+ 
+  /*GRUPO DE ESTILOS PARA LOS BOTONES DE CRUd*/
+  .nuevo
+  {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border-radius: 20px;
+    background: #f36906;
+ 
+  }
+ .lapiz,
+ .tacho
+  {
+    margin-left: 0em;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    padding: 1em 0.7em;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border-radius: 20px;
+    background: #f36906;
+    
+  }
+  
+  .nuevo:hover,
+  .lapiz:hover,
+  .tacho:hover
+  {
+    background: #f1eeec;
+  
+  }
+  
+.edicion.showBoton {
+  display: inline-block;
+
+}
+
+.edicion.noShow{
+    display: none;
+  }
+  

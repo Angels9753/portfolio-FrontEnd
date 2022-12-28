@@ -1,0 +1,7 @@
+.gradient-custom {
+  background: var(--main-bg-color);
+}
+
+label{
+    color: var(--main-bg-color);
+}

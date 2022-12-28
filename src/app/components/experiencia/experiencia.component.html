@@ -1,41 +1,57 @@
 <section id="experiencia" class="sobre-mi">
-  <div class="container-fluid ">
-  <div class="row">
-    <div class="col-8  grad">
-      <span class="d-flex justify-content-between align-items-center">
-        <h1 class="display-5 text-dark flex-grow-1" >Experiencia</h1>
-        <app-iconos-edicion></app-iconos-edicion>        
-        <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
-      </span>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col" *ngFor="let Experiencia of expe">
-          <article class="card h-100">
-            <div class="card-body">
-              <div class="d-flex">
-                <i 
-                [class]="Experiencia.iconoEx"
-                class="pt-3 fa-2xl"></i>
-                <div class="ps-3">
-                  <h6>{{ Experiencia.institucionEx }}</h6>
-                  <p>{{ Experiencia.cargoEx }}</p>
-                  <p class="small fw-light">{{ Experiencia.descripcionEx }}</p>
-                  <div class="card-footer text-muted">
-                    {{ Experiencia.desdeHastaEx }}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-8 grad">
+        <span class="d-flex justify-content-between align-items-center">
+          <h1 class="display-5 text-dark flex-grow-1">Experiencia</h1>
+          <div
+            class="edicion"
+            [ngClass]="{ showBoton: isLogged, noShow: !isLogged }"
+          >
+            <span class="d-flex justify-content-end edicion text-dark">
+              <i class="edicion nuevo fa-solid fa-file-circle-plus" routerLink="/nuevaexp"></i>
+            </span>
+          </div>
+          <a href="#"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
+        </span>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col" *ngFor="let Experiencia of expe">
+            <article class="card h-100">
+              <div class="card-body">
+                <div class="d-flex">
+                  <i [class]="Experiencia.iconoEx" class="pt-3 fa-2xl"></i>
+                  <div class="ps-3">
+                    <h6>{{ Experiencia.institucionEx }}</h6>
+                    <p>{{ Experiencia.cargoEx }}</p>
+                    <p class="small fw-light">
+                      {{ Experiencia.descripcionEx }}
+                    </p>
+                    <div class="card-footer text-muted">
+                      {{ Experiencia.desdeHastaEx }}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </article>
+              <div
+                class="edicion"
+                [ngClass]="{ showBoton: isLogged, noShow: !isLogged }"
+              >
+                <span class="d-flex justify-content-end edicion text-dark">
+                  <i class="lapiz fa-solid fa-pencil fa-xs" routerLink="/editexp/{{Experiencia.id}}"></i>
+                  <i class="tacho fa-solid fa-trash-can fa-xs" (click)="delete(Experiencia.id)"></i>
+                </span>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="col-4 foto-quieta"
-      style="background-image: url(../assets/img/oficina-compu.jpg)"
-    >
-      <!--background foto aula-->
-      <i class="fa fa-briefcase icom-grande-izq"></i>
+      <div
+        class="col-4 foto-quieta"
+        style="background-image: url(../assets/img/oficina-compu.jpg)"
+      >
+        <!--background foto aula-->
+        <i class="fa fa-briefcase icom-grande-izq"></i>
+      </div>
     </div>
   </div>
-</div>
 </section>

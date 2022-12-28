@@ -12,22 +12,22 @@ export class SSkillIdiomaService {
   constructor(private httpClient: HttpClient) { }
 
   public list():Observable<SkillIdioma[]>{
-    return this.httpClient.get<SkillIdioma[]>(this.expURL + 'lista');
+    return this.httpClient.get<SkillIdioma[]>(`${this.expURL}lista`);
   }
 
   public detail(id:number): Observable<SkillIdioma>{
-    return this.httpClient.get<SkillIdioma>(this.expURL + 'detail/$(id)')
+    return this.httpClient.get<SkillIdioma>(`${this.expURL}detail/${id}`)
   }
 
   public save(SkillIdioma: SkillIdioma): Observable<any>{
-    return this.httpClient.post<any>(this.expURL + 'create', SkillIdioma)
+    return this.httpClient.post<any>(`${this.expURL}create`, SkillIdioma)
   }
 
   public update(id:number, SkillIdioma:SkillIdioma):Observable<any>{
-    return this.httpClient.put<any>(this.expURL + 'update/${id}',SkillIdioma)
+    return this.httpClient.put<any>(`${this.expURL}update/${id}`,SkillIdioma)
   }
 
   public delete(id:number):Observable<any>{
-    return this.httpClient.delete<any>(this.expURL + 'delete/${id}')
+    return this.httpClient.delete<any>(`${this.expURL}delete/${id}`)
   }
 }
