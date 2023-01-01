@@ -36,14 +36,17 @@ div{
 p{margin-left: 3em;}
 
 */
-.banner img {
+/*.banner img {
   position: absolute;
   width: 100%;
   height: 85.5%;
-}
+}*/
+.banner {
+   width: 100%;
+ }
 
 .container-banner {
-  position: relative;
+  position: absolute;
 }
 
 .container-nombre {
