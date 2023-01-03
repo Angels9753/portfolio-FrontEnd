@@ -1,3 +1,0 @@
-"Italiano","40","bg-success"
-"Francés","30","bg-custom"
-"Inglés","60","bg-danger"

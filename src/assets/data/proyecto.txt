@@ -1,5 +1,0 @@
-"../../../assets/img/logo-AOO.jpg","Asociaciones Odontológicas","Zona Oeste y Partido de San Martín","Networking y Software de control de Stock de materiales odontológicos y Liquidación de Obras Sociales.","https://aooeste.com.ar/"
-"../../../assets/img/logo-donbosco.jpg","Institucion Salesiana","Obra Escolar Don Bosco de Ramos Mejía","Networking y Software Contable, Administración Escolar y Liquidación de sueldos.","https://www.donboscoramos.edu.ar/"
-"../../../assets/img/logo-Lasalle.jpg","Institución de La Salle","Argentina-Paraguay","Software de seguimiento psicopedagógico para alumnos de la institución.","http://lasalle.edu.ar/"
-"../../../assets/img/logo-unlam.jpg","Universidad Nacional de la Matanza","Secretaría de Informática y Comunicaciones","Software on line de gestión académica, inscripción a cursadas y exámenes.","https://www.unlam.edu.ar/"
-"../../../assets/img/logo-universidad-de-moron.jpg","Universidad de Morón","Facultad de Ingeniería Informática - Cátedra de Bases de Datos","Primera página web de Cátedra de toda la Universidad. Para dar asistencia on line a los alumnos cursantes de la Materia Base de Datos.","https://bdatos.wordpress.com/"

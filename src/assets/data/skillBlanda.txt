@@ -1,5 +1,0 @@
-"Liderazgo","95","bg-success"
-"Motivación","90","bg-custom"
-"Trabajo en Equipo","90","bg-dark"
-"Gestión de tiempo","80","bg-danger"
-"Paciencia","100","text-dark bg-warning"
