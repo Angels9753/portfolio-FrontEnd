@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { SkillDura } from '../model/skill-dura';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SSkillDuraService {
-  expURL = 'http://localhost:8080/skd/'
+  //para localhost modificar enviromento.prod
+  expURL = environment.URL + 'skd/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -2,12 +2,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { SkillBlanda } from '../model/skill-blanda';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SSkillBlandaService {
-  expURL = 'http://localhost:8080/skb/'
+  //para localhost modificar enviromento.prod
+  expURL = environment.URL + 'skb/';
 
   constructor(private httpClient: HttpClient) { }
 

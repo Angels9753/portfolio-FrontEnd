@@ -1,13 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
 import { Estudio } from '../model/estudio'; 
 
 @Injectable({
   providedIn: 'root'
 })
 export class SEstudioService {
-  expURL = 'http://localhost:8080/est/'
+
+  //para localhost modificar enviromento.prod
+  expURL = environment.URL + 'est/';
 
   constructor(private httpClient: HttpClient) { }
 

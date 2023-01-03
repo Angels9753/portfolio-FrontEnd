@@ -2,12 +2,15 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { SkillIdioma } from '../model/skill-idioma';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SSkillIdiomaService {
-  expURL = 'http://localhost:8080/ski/'
+  
+  //para localhost modificar enviromento.prod
+  expURL = environment.URL + 'ski/';
 
   constructor(private httpClient: HttpClient) { }
 

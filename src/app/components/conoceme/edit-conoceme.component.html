@@ -1,100 +1,93 @@
-<body >
-    <section class="vh-100 gradient-custom" >
-      <app-logo-ap></app-logo-ap>
-      <div class="container py-5 h-100"  *ngIf="per" >
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-11">
-            <div class="card bg-dark text-white" style="border-radius: 1rem">
-              <div class="card-body p-5 text-center">
-                <div >
-                  <h2 class="fw-bold mb-2 text-uppercase">Editar Perfil</h2>
-                  <p class="text-white-50 mb-5">
-                    Por favor, ingresar la información adecuada.
-                  </p>
-                  <form
-                    class="form-floating"
-                    (ngSubmit)="onUpdate()"
-                    novalidate
-                    #f="ngForm"
-                  >
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="nombre"
-                        name="nombre"
-                        [(ngModel)]="per.nombre"
-                        required
-                      />
-                      <label for="nombre">Nombre de la Persona</label>
-                    </div>
-                    <br />
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="tituloEs"
-                        name="tituloEs"
-                        [(ngModel)]="per.apellido"
-                        required
-                      />
-                      <label for="tituloEs">Apellido de la Persona</label>
-                    </div>
-                    <br />
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="img"
-                        name="img"
-                        [(ngModel)]="per.img"
-                        required
-                      />
-                      <label for="img">URL de la Foto del titular</label>
-                    </div>
-                    <br />
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subtitulo"
-                        name="subtitulo"
-                        [(ngModel)]="per.subtitulo"
-                        required
-                      />
-                      <label for="subtitulo">Titulo Académico actual</label>
-                    </div>
-                    <br />
-<!--
-                    <div class="form-floating">
-                        <textarea class="form-control" id="descripcion" style="height: 10em"  required> {{per.descripcion}} </textarea>
-                        <label for="floatingTextarea">Breve reseña personal</label>
-                    </div>
+<body>
+  <section class="vh-100 gradient-custom">
+    <app-logo-ap></app-logo-ap>
+    <div class="container py-5 h-100" *ngIf="per">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-11">
+          <div class="card bg-dark text-white" style="border-radius: 1rem">
+            <div class="card-body p-5 text-center">
+              <div>
+                <h2 class="fw-bold mb-2 text-uppercase">Editar Perfil</h2>
+                <p class="text-white-50 mb-5">
+                  Por favor, ingresar la información adecuada.
+                </p>
+                <form
+                  class="form-floating"
+                  (ngSubmit)="onUpdate()"
+                  novalidate
+                  #f="ngForm"
+                >
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      name="nombre"
+                      [(ngModel)]="per.nombre"
+                      required
+                    />
+                    <label for="nombre">Nombre de la Persona</label>
+                  </div>
+                  <br />
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="tituloEs"
+                      name="tituloEs"
+                      [(ngModel)]="per.apellido"
+                      required
+                    />
+                    <label for="tituloEs">Apellido de la Persona</label>
+                  </div>
+                  <br />
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="img"
+                      name="img"
+                      [(ngModel)]="per.img"
+                      required
+                    />
+                    <label for="img">URL de la Foto del titular</label>
+                  </div>
+                  <br />
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subtitulo"
+                      name="subtitulo"
+                      [(ngModel)]="per.subtitulo"
+                      required
+                    />
+                    <label for="subtitulo">Titulo Académico actual</label>
+                  </div>
+                  <br />
 
--->
-                    <div class="form-floating">
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="descripcion"
-                          name="descripcion"
-                          [(ngModel)]="per.descripcion"
-                          required  
-                        />
-                        <label for="descripcion">Breve reseña personal</label>
-                      </div>
-                      <br />
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      id="descripcion"
+                      style="height: 10em"
+                      [(ngModel)]="desc"
+                      (input)="escribirTexto(desc)"
+                      [ngModelOptions]="{ standalone: true }"
+                      required>
+                    </textarea>
+                    <label for="floatingTextarea">Breve reseña personal</label>
+                  </div>
+                  <br />
 
-                    <button  class="btn btn-primary">Actualizar Perfil</button>
-                  </form>
-                </div>
+                  <button class="btn btn-primary">Actualizar Perfil</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <app-footer></app-footer>
-  </body>
-  
-
+    </div>
+  </section>
+  <app-footer></app-footer>
+</body>

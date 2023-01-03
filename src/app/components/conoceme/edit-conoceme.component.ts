@@ -1,3 +1,4 @@
+import { compileNgModule } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { persona } from 'src/app/model/persona.model';
@@ -23,12 +24,17 @@ export class EditConocemeComponent implements OnInit {
     this.sPersona.detail(id).subscribe(
       (data) => {
         this.per = data;
+        this.desc=this.per.descripcion;
       },
       (err) => {
         alert('Error al modificar perfil');
         this.router.navigate(['']);
       }
     );
+  }
+
+  escribirTexto(desc: any):void{
+    this.per.descripcion=desc;
   }
 
   onUpdate(): void {
@@ -43,16 +49,7 @@ export class EditConocemeComponent implements OnInit {
       }
     );
   }
-/*
-  public onValueChange(event: Event): void {
-    const id = this.activatedRouter.snapshot.params['id'];
-    this.sPersona.update(id, this.per).subscribe((data) => {
-      this.desc = this.per.descripcion;
-      console.log(this.desc);
-      console.log(event.target);
-      const value = (event.target as any).value;
-      this.desc = value;
-    });
-  }
-  */
+
+
+
 }

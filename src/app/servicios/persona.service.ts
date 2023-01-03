@@ -1,13 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
 import { persona } from '../model/persona.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonaService {
-  expURL="http://localhost:8080/personas/"
+ 
+  //para localhost modificar enviromento.prod
+  expURL = environment.URL + 'personas/';
 
   constructor(private httpClient:HttpClient) { }
 
