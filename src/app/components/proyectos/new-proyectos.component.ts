@@ -39,6 +39,8 @@ export class NewProyectosComponent implements OnInit {
         }
       )
     }
+
+    goHome():void{this.router.navigate([''])}
   }
 
 

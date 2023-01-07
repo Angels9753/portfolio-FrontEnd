@@ -38,5 +38,5 @@ estCur: Estudio = null;
       }
     )
   }
-
+  goHome():void{this.router.navigate([''])}
 }

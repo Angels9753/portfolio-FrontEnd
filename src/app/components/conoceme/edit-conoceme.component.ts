@@ -50,6 +50,6 @@ export class EditConocemeComponent implements OnInit {
     );
   }
 
-
+  goHome():void{this.router.navigate([''])}
 
 }

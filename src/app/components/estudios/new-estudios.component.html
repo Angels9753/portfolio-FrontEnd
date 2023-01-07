@@ -4,7 +4,10 @@
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-8 col-lg-6 col-xl-11">
-            <div class="card bg-dark text-white" style="border-radius: 1rem">
+            <div class="card text-white" style="border-radius: 1rem;background: var(--main-bg-color-edit)">
+              <div class="d-flex justify-content-end" >
+                <i class="cursor-pointer p-4 fa-solid fa-xmark fa-xl" (click)="goHome()"></i>
+              </div>
               <div class="card-body p-5 text-center">
                 <div >
                   <h2 class="fw-bold mb-2 text-uppercase">Nuevo Estudio</h2>

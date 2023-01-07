@@ -5,11 +5,13 @@
   --card-bg-color: rgb(248, 241, 201);
   --card-titulo: blue;
   --icon-grande-color: rgba(0, 0, 255, 0.832);
+  --main-bg-color-edit: #0e2261;
   /* original
   --main-bg-color: #04bbff;
    --main-bg-color-grad: #025877;
    --icon-grande-color: red;
   */
+ 
 }
 
 .sobre-mi {
@@ -117,3 +119,5 @@ h1,.edicion.showBoton
     display: none;
   }
   
+.cursor-pointer{
+  cursor: pointer;}

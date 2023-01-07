@@ -37,5 +37,5 @@ export class EditProyectosComponent implements OnInit {
       }
     )
   }
-
+  goHome():void{this.router.navigate([''])}
 }

@@ -43,6 +43,8 @@ export class NewExperienciaComponent implements OnInit {
         }
       )
     }
+
+    goHome():void{this.router.navigate([''])}
   }
 
 

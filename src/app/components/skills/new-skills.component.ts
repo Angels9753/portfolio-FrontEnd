@@ -77,4 +77,5 @@ export class NewSkillsComponent implements OnInit {
       );
     }
   }
+  goHome():void{this.router.navigate([''])}
 }

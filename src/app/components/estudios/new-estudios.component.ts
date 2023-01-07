@@ -37,4 +37,5 @@ export class NewEstudiosComponent implements OnInit {
       }
     );
   }
+  goHome():void{this.router.navigate([''])}
 }
