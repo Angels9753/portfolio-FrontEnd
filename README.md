@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
+Proyecto de PortFolio de Argentina Programa 3.0
+Sección de Front End diseñada en HTML5, CSS y Type Scrip con el adicional de AngularJS y Librerias de Bootstrap.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
