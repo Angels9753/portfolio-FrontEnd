@@ -1,6 +1,6 @@
 # PortfolioFrontEnd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0. en entorno IDE de VSCode.
 
 Proyecto de PortFolio de Argentina Programa 3.0
 Sección de Front End diseñada en HTML5, CSS y Type Scrip con el adicional de AngularJS y Librerias de Bootstrap.
