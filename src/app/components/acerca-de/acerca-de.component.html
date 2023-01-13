@@ -1,23 +1,49 @@
-<div class="row">
+<!--Region de Spinner aguarda la carga de datos-->
+<div class="row" *ngIf="loading" >
   <div class="banner">
-    <img  src="../assets/img/banner.jpg" alt=""  width="100%" />
-  </div>
+    <img src="../assets/img/banner.jpg" alt="" width="100%"/>
+  </div> 
   <div class="container-banner">
-    <div class="col-12 text-left" >
-      <div class="container-nombre" >
-        <h1 class="display-5">{{pers?.nombre}} {{pers?.apellido}}</h1>
-        <h3>{{pers?.subtitulo}}</h3>
+    <div class="col-12 text-left">
+      <div class="container-nombre">
       </div>
       <div></div>
     </div>
-    <div class=" col-3"></div>
-    <div class=" banner col-6 text-center">
+    <div class="col-3"></div>
+    <div class="p-5 loading col-6 text-center">
+      <img src="../assets/img/VAyR.gif" width="5%"/>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-12 text-center">
+    </div>
+    <div class="col-12 text-center">
+    </div>
+  </div>
+</div>
+
+<!--Pagina normal ya cargó los datos-->
+<div class="row" *ngIf="pers?.id">
+  <div class="banner">
+    <img src="../assets/img/banner.jpg" alt="" width="100%" />
+  </div>
+  <div class="container-banner">
+    <div class="col-12 text-left">
+      <div class="container-nombre">
+        <h1 class="display-5">{{ pers?.nombre }} {{ pers?.apellido }}</h1>
+        <h3>{{ pers?.subtitulo }}</h3>
+      </div>
+      <div></div>
+    </div>
+    <div class="col-3"></div>
+    
+    <div class="banner col-6 text-center">
       <img
         class="rounded-circle border border-white border-3"
-        [src]="pers?.img" width="25%"
+        [src]="pers?.img"
+        width="25%"
       />
     </div>
-    <div class=" col-3"></div>
+    <div class="col-3"></div>
     <div class="col-12 text-center">
       <h3 class="display-5 text-warning">conóceme...</h3>
     </div>
